@@ -7,6 +7,7 @@ h4 {
   font-weight: 400;
   line-height: 76.8px;
   text-align: left;
+  z-index: -1;
 }
 
 .heroHeadline {
@@ -30,8 +31,36 @@ h3,
 h4 {
   margin: 0;
   padding: 0;
-//   height: 80px;
+  //   height: 80px;
 }
 .heroHeadlineOuterFrame {
-    align-items: center;
+  align-items: center;
+}
+
+.heroRight {
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+.innerhero {
+  display: flex;
+  align-items: center;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 646px;
+  display: flex;
+  flex-direction: column;
+  gap:56px;
+}
+
+.hero {
+  // background-color:red;
+  background-image: url("./../../../assets/img/28. Hero Background.png"),
+    url("./../../../assets/img/29. photo shadows.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 410px, left bottom;
+  height: 100vh;
 }

@@ -1,0 +1,37 @@
+div {
+  display: flex;
+}
+h4 {
+  transform: rotate(-90deg);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 76.8px;
+  text-align: left;
+}
+
+.heroHeadline {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 76px;
+}
+
+h3 {
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 69.6px;
+  text-align: left;
+  color: #9747ff;
+}
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+//   height: 80px;
+}
+.heroHeadlineOuterFrame {
+    align-items: center;
+}

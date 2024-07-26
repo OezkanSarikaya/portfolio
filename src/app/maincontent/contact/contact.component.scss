@@ -1,0 +1,68 @@
+#contact {
+    background-image: url('./../../../assets/img/Purple shadow 4.png');
+    background-repeat: no-repeat;
+    background-position: left 200px;
+    background-size: contain;
+
+}
+
+.contact {
+  display: flex;
+  gap:32px;
+  padding:32px;
+
+}
+.contactText,
+.contactForm {
+  width: 50%;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+input,
+textarea {
+  border: unset;
+  border: 1px solid #9747ff;
+  border-radius: 10px;
+  background-color: inherit;
+  padding: 15px 25px;
+  width:100%;
+  color: white;
+}
+
+textarea {
+    min-height: 202px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.479);
+  font-size: 16px;
+  //   font-weight: 200;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+a {
+  color: #9747ff;
+}
+
+button {
+    width: fit-content;
+  border: unset;
+  background-color: #b6b6b6;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}

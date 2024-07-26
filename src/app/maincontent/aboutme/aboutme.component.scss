@@ -5,10 +5,12 @@
 img {
   border: 4px solid #70e61c;
   border-radius: 50%;
+  width:453px;
 }
 
 .aboutme {
     background-image: url('./../../../assets/img/Purple shadow 2.png');
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: contain;
 }

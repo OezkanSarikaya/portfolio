@@ -1,20 +1,53 @@
-.innerskills {display: flex;
-align-items: start;}
+.innerskills {
+  display: flex;
+  align-items: start;
+}
 .skillbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:8px;
-    width:88px;
-    font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 88px;
+  font-weight: 700;
+  text-align: center;
 }
 .skillsLeft {
-    width:50%;
-    display: flex;
-    gap:88px;
-    flex-wrap: wrap;
-
+  width: 50%;
+  display: flex;
+  gap: 88px;
+  flex-wrap: wrap;
 }
 
-.skillsRight {width:50%;}
+.skillsRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+.skills {
+  background-image: url("./../../../assets/img/Green shadow 2.png");
+  background-repeat: no-repeat;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: right;
+  margin: 0;
+  > b {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: right;
+    color: #9747ff;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}

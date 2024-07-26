@@ -14,7 +14,12 @@ nav {
     font-weight: 400;
     line-height: 27.6px;
     text-align: left;
+    transition: color 125ms ease-in-out;
+    &:hover {
+      color:#70E61C
+    }
   }
+  
 }
 
 .innerHeader {

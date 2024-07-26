@@ -1,8 +1,8 @@
 .portfolio {
-    background-image: url('./../../../assets/img/Purple shadow 3.png');
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: contain;
+  background-image: url("./../../../assets/img/Purple shadow 3.png");
+  background-repeat: no-repeat;
+  background-position: -200px top;
+  background-size: 50%;
 }
 
 h3 {
@@ -23,53 +23,52 @@ h4 {
 button {
   border: unset;
   cursor: pointer;
-//   width: Hug (152px)px;
-// height: Hug (58px)px;
-padding: 15px 30px;
-// gap: 10px;
-border-radius: 10px;
-color:white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  background-color: unset;
+  transition: background-color 125ms ease-in-out;
+}
 
-font-size: 23px;
-font-weight: 400;
-line-height: 27.6px;
-// text-align: left;
-background-color:unset;
-
-
+button:hover {
+    background-color: #70e61c;
 }
 
 .primary {
-    background-color: #9747FF;
+  background-color: #9747ff;
 }
 .secondary {
-border: 1px solid #70E61C;
+  border: 1px solid #70e61c;
 }
 
 .project {
-
-    display: flex;
-    gap:48px;
-    // flex-direction: row-reverse;
-    margin:48px 0;
+  display: flex;
+  gap: 48px;
+  // flex-direction: row-reverse;
+  margin: 48px 0;
 }
 
 .project:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .project:nth-child(odd) {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .projectdetails {
-    max-width:50%;
+  max-width: 50%;
 }
 .img {
-    max-width:50%;
-    img {width:100%;}
+  max-width: 50%;
+  img {
+    width: 100%;
+  }
 }
 .buttons {
-    display: flex;
-    gap:86px;
+  display: flex;
+  gap: 86px;
 }

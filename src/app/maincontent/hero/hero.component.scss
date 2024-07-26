@@ -47,27 +47,30 @@ h4 {
   display: flex;
   align-items: center;
 }
+.height {height:705px;
+width:646px;}
 
 .heroImage {
   width: 100%;
   max-width: 646px;
   display: flex;
   flex-direction: column;
-  gap:56px;
+  gap: 56px;
 }
 
 .hero {
   // background-color:red;
   background-image: url("./../../../assets/img/28. Hero Background.png"),
+    url("./../../../assets/img/hero character photo.png"),
     url("./../../../assets/img/29. photo shadows.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 410px, left bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: right 410px, 130px 150px, 80px center;
+  background-size: 100% 100%,646px 705px,707px 671px;
   height: 100vh;
 }
 
 .heroContactIcons {
-
   display: flex;
-  gap:32px;
+  gap: 32px;
   align-items: center;
 }

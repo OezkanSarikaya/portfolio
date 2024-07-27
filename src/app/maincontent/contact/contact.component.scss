@@ -10,7 +10,9 @@
   display: flex;
   gap:32px;
   padding:32px;
-
+}
+#contact {
+  padding:48px 16px;
 }
 .contactText,
 .contactForm {
@@ -66,3 +68,5 @@ button {
   color: white;
   cursor: pointer;
 }
+
+h2 {text-align: center;}

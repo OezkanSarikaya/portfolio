@@ -3,7 +3,9 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom:0;
     background-color: #141d2f;
+    height:109px;
 }
 
 nav {
@@ -23,7 +25,7 @@ nav {
 }
 
 .innerHeader {
-  padding: 37px 0 37px 0;
+  padding: 35px 0 35px 0;
   gap: 0px;
   display: flex;
   justify-content: space-between;

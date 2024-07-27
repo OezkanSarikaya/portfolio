@@ -1,8 +1,9 @@
 .portfolio {
   background-image: url("./../../../assets/img/Purple shadow 3.png");
   background-repeat: no-repeat;
-  background-position: -200px top;
-  background-size: 50%;
+  background-position: -200px 50px;
+  background-size: 35%;
+  padding:48px 16px;
 }
 
 h3 {
@@ -20,7 +21,7 @@ h4 {
   text-align: left;
   color: #70e61c;
 }
-button {
+button, a {
   border: unset;
   cursor: pointer;
   padding: 15px 30px;
@@ -33,7 +34,7 @@ button {
   transition: background-color 125ms ease-in-out;
 }
 
-button:hover {
+button:hover, a:hover {
     background-color: #70e61c;
 }
 
@@ -72,3 +73,5 @@ button:hover {
   display: flex;
   gap: 86px;
 }
+
+h2 {text-align: center;}

@@ -1,6 +1,8 @@
 .inneraboutme {
   display: flex;
   align-items: center;
+  // justify-content: space-around;
+  // gap:48px;
 }
 img {
   border: 4px solid #70e61c;
@@ -14,6 +16,8 @@ img {
     background-position: top right;
     background-size: contain;
     padding:48px 16px;
+    padding-top: 110px;
+   
 }
 .aboutmeLeft {
 
@@ -21,4 +25,6 @@ img {
 }
 .aboutmeRight{
   width:50%;
+  display: flex;
+  justify-content: flex-end;
 }

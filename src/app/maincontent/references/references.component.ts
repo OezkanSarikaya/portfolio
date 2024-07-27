@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Reference } from './../../interfaces/reference';
 
 @Component({
   selector: 'app-references',
@@ -8,11 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './references.component.scss',
 })
 export class ReferencesComponent {
-  testimonials: {
-    text: string;
-    image: string;
-    person: string;
-  }[] = [
+  testimonials: Reference[] = [
     {
       text: 'Özkan has delivered outstanding performance in our team project. He possesses a deep understanding of JavaScript and has effectively utilized this knowledge to solve complex problems and develop innovative solutions. His ability to write clear and efficient code has significantly advanced our project. Özkan also excels in teamwork, contributing valuable ideas and actively supporting other team members. His expertise and dedication have been instrumental to the success of our project.',
       image: './assets/img/personB.png',
@@ -30,11 +27,11 @@ export class ReferencesComponent {
     },
   ];
 
-  currentText: string = this.testimonials[0].text;
-  currentPerson: string = this.testimonials[0].person;
-  currentImage: string = this.testimonials[0].image;
-  currentPostId: number = 0;
-  currentAnimate:string = "";
+  currentText = this.testimonials[0].text;
+  currentPerson = this.testimonials[0].person;
+  currentImage= this.testimonials[0].image;
+  currentPostId = 0;
+  currentAnimate = "";
 
   navigate(postId: number) {
     this.currentText = this.testimonials[postId].text;

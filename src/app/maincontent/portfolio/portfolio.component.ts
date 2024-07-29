@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Portfolio } from './../../interfaces/portfolio';
-
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -9,7 +8,6 @@ import { Portfolio } from './../../interfaces/portfolio';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-
 
   portfolios: Portfolio[] = [
     {
@@ -28,7 +26,6 @@ export class PortfolioComponent {
       githubUrl:'https://github.com/OezkanSarikaya/canvasGame',
       demoUrl:'https://oezkan-sarikaya.developerakademie.net/el-pollo-loco/'
     },
-
     {
       headline: 'Pokedex',
       subheadline: 'JavaScript | HTML | CSS | Api',
@@ -38,12 +35,5 @@ export class PortfolioComponent {
       demoUrl:'https://oezkan-sarikaya.developerakademie.net/pokedex/'
     }, 
   ];
-
-  currentHeadline = this.portfolios[0].headline;
-  currentSubheadline = this.portfolios[0].subheadline;
-  currentText = this.portfolios[0].text;
-  currentImage = this.portfolios[0].image;
-  currentGithubUrl = this.portfolios[0].githubUrl;
-  currentDemoUrl = this.portfolios[0].demoUrl;
 
 }

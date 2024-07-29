@@ -25,6 +25,10 @@
   src: url('./assets/fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+$primary1: #70E61C;
+$primary2: #9747FF;
+$bg_color: #141D2F;
+
 html {
   scroll-behavior: smooth;
 }
@@ -40,7 +44,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #141d2f;
+  background-color: $bg_color;
   color: white;
   // margin-top: 110px;
 }
@@ -52,7 +56,8 @@ body {
 }
 
 h2 {
-  font-size: 90px;
+  // font-size: 90px;
+  font-size: 5.7vw;
   font-weight: 700;
   line-height: 108px;
   text-align: left;
@@ -63,7 +68,7 @@ h2 {
 .contactButton {
   border: unset;
   cursor: pointer;
-  background-color: #70e61c;
+  background-color: $primary1;
   padding: 15px 30px 15px 30px;
   gap: 10px;
   border-radius: 10px;
@@ -77,8 +82,24 @@ h2 {
 }
 
 .contactButton:hover {
-  background-color: #9747FF;
+  background-color: $primary2;
   transform: scale(1.2);
 }
 
 a {text-decoration: none;color:white;}
+
+@media screen and (max-width:768px) {
+  h2 {
+    font-size: 45px;
+    line-height: 45px;
+
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  h2 {
+     font-size: 90px;
+  }
+}
+

@@ -50,7 +50,8 @@ button:hover, a:hover {
   display: flex;
   gap: 48px;
   // flex-direction: row-reverse;
-  margin: 48px 0;
+  margin: 56px 0;
+  p {text-align: left;}
 }
 
 .project:nth-child(even) {

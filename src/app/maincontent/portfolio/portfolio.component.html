@@ -9,17 +9,17 @@
     @for(portfolio of portfolios; track portfolios; let index = $index) {
     <div class="project">
       <div class="img">
-        <img src="{{ currentImage }}" alt="" />
+        <img src="{{ portfolio.image }}" alt="" />
       </div>
       <div class="projectdetails">
-        <h3>{{ currentHeadline }}</h3>
-        <h4>{{ currentSubheadline }}</h4>
-        <p>{{ currentText }}</p>
+        <h3>{{ portfolio.headline }}</h3>
+        <h4>{{ portfolio.subheadline }}</h4>
+        <p>{{ portfolio.text }}</p>
         <div class="buttons">
-          <a href="{{ currentDemoUrl }}" class="primary" target="_blank"
+          <a href="{{ portfolio.demoUrl }}" class="primary" target="_blank"
             >Live test</a
           >
-          <a href="{{ currentGithubUrl }}" target="_blank" class="secondary"
+          <a href="{{ portfolio.githubUrl }}" target="_blank" class="secondary"
             >Github</a
           >
         </div>

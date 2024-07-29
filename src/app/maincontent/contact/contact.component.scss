@@ -6,13 +6,13 @@
 
 }
 
-.contact {
+.contactpage {
   display: flex;
   gap:32px;
   padding:32px;
 }
 #contact {
-  padding:48px 16px;
+  // padding:48px 16px;
 }
 .contactText,
 .contactForm {
@@ -69,4 +69,8 @@ button {
   cursor: pointer;
 }
 
-h2 {text-align: center;}
+h2 {text-align: center;
+  display: flex;
+align-items: center;
+gap: 24px;
+}

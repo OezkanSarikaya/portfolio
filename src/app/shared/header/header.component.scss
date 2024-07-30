@@ -39,16 +39,17 @@
 display: none;
 }
 
-.dnone {display: none;}
-.dnone {display: flex;}
+// .dnone {display: none;}
+// .dnone {display: flex;}
 
 @media screen and (max-width:768px) {
-  body {overflow-y: hidden;position: fixed;}
+ 
   .mobileNav {display: flex;
     flex-direction: column;
     padding-top:200px;
   z-index: 2;
   gap: 29px;
+
   a {
     font-size: 23px;
     font-weight: 400;
@@ -62,15 +63,16 @@ display: none;
   }
   .mobileNavContainer {
     // background-color:#414856;
-
-    background-color:rgba(0,0,0,0.5);
+    
+    background-color:#242830b7;
 
 
     height:100vh;
-    z-index: 1;
+    z-index: 5;
     overflow-y: hidden;
     position: fixed;
-    top:109px;
+    // top:109px;
+    top:0px;
     left:0;
     right:0;
     display: flex;

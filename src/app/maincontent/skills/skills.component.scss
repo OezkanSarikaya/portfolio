@@ -1,6 +1,7 @@
 .innerskills {
   display: flex;
   align-items: start;
+  padding: 48px 100px;
 }
 .skillbox {
   display: flex;
@@ -10,14 +11,15 @@
   gap: 8px;
   width: 88px;
   font-weight: 700;
-  text-align: center; 
+  text-align: center;
+  flex: 1;
 }
 .skillsLeft {
   width: 50%;
   display: flex;
   gap: 88px;
   flex-wrap: wrap;
-  padding-top:48px;
+  padding-top: 48px;
 }
 
 .skillsRight {
@@ -33,7 +35,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
-  padding:48px 16px;
+
   padding-top: 110px;
 }
 h3 {
@@ -63,4 +65,30 @@ p {
 
 .skillbox svg {
   transition: transform 125ms ease-in-out;
+}
+
+h2 {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 24px;
+}
+
+@media screen and (max-width: 1280px) {
+  .innerskills {
+    flex-direction: column-reverse;
+  }
+  .skillsLeft,
+  .skillsRight {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .innerskills {
+    display: flex;
+    align-items: start;
+    padding: 48px 25px;
+  }
 }

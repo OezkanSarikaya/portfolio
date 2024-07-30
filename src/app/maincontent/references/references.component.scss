@@ -1,62 +1,80 @@
 .testimonialBox {
-
-background-repeat: no-repeat;
-border: 4px solid #70E61C;
-max-width: 851.5px;
-// height: 272px;
-padding: 0px 96px 48px 96px;
-// gap: 44px;
-border-radius: 32px ;
-
-
+  background-repeat: no-repeat;
+  border: 4px solid #70e61c;
+  max-width: 851.5px;
+  // height: 272px;
+  padding: 0px 96px 48px 96px;
+  // gap: 44px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.testimonial {display: flex;
-    justify-content: space-around;
-
+.testimonial {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
 }
 
 // .profile {
- 
-    
+
 // }
 
 .profile {
-    border: 4px solid #9747FF;
-    width:272px;
-    height:272px;
-    object-fit: contain;border-radius: 50%;
+  border: 4px solid #9747ff;
+  width: 272px;
+  height: 272px;
+  object-fit: contain;
+  border-radius: 50%;
 }
-
-
 
 .apostroph {
-    width:97px;object-fit: contain;
-    position: relative;
-    top:-60px;
-    left:-160px;
+  width: 97px;
+  object-fit: contain;
+  position: relative;
+  top: -60px;
+  left: -160px;
 }
-p {margin:0;padding:0;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 
-.person {text-align: right;font-size: 16px;}
+.person {
+  text-align: right;
+  font-size: 16px;
+}
 #references {
-// background-image: url('./../../../assets/img/Green shadow 3.png');
-// background-repeat: no-repeat;
-// background-position: center right;
-// background-size: contain;
-padding:48px 16px;
+  // background-image: url('./../../../assets/img/Green shadow 3.png');
+  // background-repeat: no-repeat;
+  // background-position: center right;
+  // background-size: contain;
+  padding: 48px 100px;
 }
 
 .testimonialNav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    #references {padding: 48px 25px;}
+  .testimonial {
+    flex-direction: column-reverse;
     gap:24px;
-    justify-content: center;
-    cursor: pointer;
+    align-items: center;
+  }
+  .testimonialBox {
+
+    padding: 16px;
+
+  }
 }

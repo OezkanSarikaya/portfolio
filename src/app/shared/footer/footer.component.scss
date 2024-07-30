@@ -1,16 +1,36 @@
-.footer {display: flex;
-justify-content: space-between;
-align-items: center;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-padding:48px 0;
+  padding: 48px 100px;
 }
 
 .contactIcons {
-    display: flex;
-    gap:24px;
+  display: flex;
+  gap: 24px;
 }
 
 #footer {
+  border-top: 4px solid #70e61c;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    flex-direction: column;
+    gap:24px;
+    padding: 48px 25px;
+    
+  }
 
-    border-top: 4px solid #70E61C;
+  .footerLink {width:100%;text-align: center;display: block;}
+//   #footer {
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+//   }
+
+  
 }

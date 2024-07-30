@@ -1,19 +1,16 @@
 #contact {
-    background-image: url('./../../../assets/img/Purple shadow 4.png');
-    background-repeat: no-repeat;
-    background-position: left 200px;
-    background-size: contain;
-
+  background-image: url("./../../../assets/img/Purple shadow 4.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size:30vw;
 }
 
 .contactpage {
   display: flex;
-  gap:32px;
-  padding:32px;
+  gap: 32px;
+  padding: 32px 100px;
 }
-#contact {
-  // padding:48px 16px;
-}
+
 .contactText,
 .contactForm {
   width: 50%;
@@ -39,12 +36,12 @@ textarea {
   border-radius: 10px;
   background-color: inherit;
   padding: 15px 25px;
-  width:100%;
+  width: 100%;
   color: white;
 }
 
 textarea {
-    min-height: 202px;
+  min-height: 202px;
 }
 
 ::placeholder {
@@ -60,7 +57,7 @@ a {
 }
 
 button {
-    width: fit-content;
+  width: fit-content;
   border: unset;
   background-color: #b6b6b6;
   padding: 15px 30px;
@@ -69,8 +66,48 @@ button {
   cursor: pointer;
 }
 
-h2 {text-align: center;
+h2 {
+  text-align: center;
   display: flex;
-align-items: center;
-gap: 24px;
+  align-items: center;
+  gap: 24px;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"] + label {
+  display: block;
+  min-height: 32px;
+  cursor: pointer;
+  background-image: url("./../../../assets/img/icons/svg/unchecked.png");
+  background-repeat: no-repeat;
+  background-position: 8px -3px;
+  padding-left: 43px;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+  background-image: url("./../../../assets/img/icons/svg/checked.png");
+}
+
+label a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .contactpage {
+    // display: flex;
+    // gap:32px;
+    padding: 32px 25px;
+    flex-direction: column;
+  }
+
+  .contactText,
+  .contactForm {
+    width: 100%;
+  }
 }

@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: -200px 50px;
   background-size: 35%;
-  padding:48px 16px;
+  padding: 48px 100px;
   padding-top: 110px;
 }
 
@@ -22,7 +22,8 @@ h4 {
   text-align: left;
   color: #70e61c;
 }
-button, a {
+button,
+a {
   border: unset;
   cursor: pointer;
   padding: 15px 30px;
@@ -35,8 +36,9 @@ button, a {
   transition: background-color 125ms ease-in-out;
 }
 
-button:hover, a:hover {
-    background-color: #70e61c;
+button:hover,
+a:hover {
+  background-color: #70e61c;
 }
 
 .primary {
@@ -48,10 +50,13 @@ button:hover, a:hover {
 
 .project {
   display: flex;
+  align-items: center;
   gap: 48px;
-  // flex-direction: row-reverse;
+  //  flex-direction: row;
   margin: 56px 0;
-  p {text-align: left;}
+  p {
+    text-align: left;
+  }
 }
 
 .project:nth-child(even) {
@@ -64,6 +69,12 @@ button:hover, a:hover {
 
 .projectdetails {
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap:24px;
+  h3,h4,p {margin:0;}
 }
 .img {
   max-width: 50%;
@@ -76,6 +87,37 @@ button:hover, a:hover {
   gap: 86px;
 }
 
-h2 {text-align: center;}
+h2 {
+  text-align: center;
+}
 
-p {text-align: center;}
+p {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .project {
+    flex-direction: column !important;
+  }
+  .img,
+  .projectdetails {
+    max-width: 100%;
+  }
+  .portfolio {
+    padding: 48px 25px;
+  }
+  .buttons {
+    gap: 16px;
+    justify-content: center;
+  }
+  a {
+
+    padding: 15px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 23px;
+
+  }
+  .projectdetails {align-items: center;}
+}

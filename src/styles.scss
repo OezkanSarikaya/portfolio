@@ -46,8 +46,15 @@ body {
   margin: 0;
   background-color: $bg_color;
   color: white;
-  // margin-top: 110px;
+  margin-top: 113px;
+  
 }
+
+:root {
+  --animate-duration: 125ms;
+}
+
+.noscroll {overflow-y:hidden;}
 
 .maxContentWith {
   max-width: 1440px;

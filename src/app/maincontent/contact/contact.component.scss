@@ -29,8 +29,16 @@ h3 {
   gap: 32px;
 }
 
-input,
-textarea {
+.formElements {
+  width:100%;
+  span {color:red;
+    display: block;
+  margin:6px 0 0 20px;}
+  padding:0;
+  font-size:16px;
+}
+
+.inputField {
   border: unset;
   border: 1px solid #9747ff;
   border-radius: 10px;

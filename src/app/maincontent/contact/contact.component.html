@@ -1,21 +1,23 @@
 <div id="contact">
-  <h2><svg
-    width="537"
-    height="4"
-    viewBox="0 0 537 4"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M0 2L535 2.00005"
-      stroke="#9747FF"
-      stroke-width="4"
-      stroke-linecap="round"
-    />
-  </svg> Contact</h2>
+  <h2>
+    <svg
+      width="537"
+      height="4"
+      viewBox="0 0 537 4"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 2L535 2.00005"
+        stroke="#9747FF"
+        stroke-width="4"
+        stroke-linecap="round"
+      />
+    </svg>
+    Contact
+  </h2>
   <div class="maxContentWith">
-    
-    <div class="contactpage">      
+    <div class="contactpage">
       <div class="contactText">
         <h3>Got a problem to solve?</h3>
         <p>
@@ -24,16 +26,70 @@
         </p>
         <p>Need a Frontend developer? <strong>Contact me!</strong></p>
       </div>
-      <form class="contactForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <input [(ngModel)]="contactData.name" type="text" placeholder="Your name" name="yourname" required />
-        <input [(ngModel)]="contactData.email" type="email" placeholder="Your email" name="email" required />
-        <textarea [(ngModel)]="contactData.message" name="message" id="" placeholder="Your message" required ></textarea>
-        <div class="checkbox">
-          <input type="checkbox" name="" id="accept" /><label for="accept">I´ve read the
-            <a routerLink="privacypolicy">privacy policy</a> and agree to the
-            processing of my data aus outlined.</label> 
-          <!-- <span></span> -->
+      <form
+        class="contactForm"
+        (ngSubmit)="onSubmit(contactForm)"
+        #contactForm="ngForm"
+      >
+        <div class="formElements">
+          <input
+            class="inputField"
+            #name="ngModel"
+            [(ngModel)]="contactData.name"
+            type="text"
+            placeholder="Your name"
+            name="yourname"
+            required
+          />
+          @if (!name.valid && contactForm.submitted && !name.disabled) {
+          <span>Please enter your name!</span>
+
+          }
         </div>
+
+        <div class="formElements">
+          <input
+            class="inputField"
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            type="email"
+            placeholder="Your email"
+            name="email"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          @if (!email.valid && !email.disabled && contactForm.submitted) {
+          <span>Please enter your email!</span>
+          }
+        </div>
+
+        <div class="formElements">
+          <textarea
+            class="inputField"
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            name="message"
+            id=""
+            placeholder="Your message"
+            required
+            minlength="4"
+          ></textarea>
+          @if (!message.valid && !message.disabled && contactForm.submitted) {
+          <span>Please enter a message!</span>
+          }
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="agree" id="accept" required /><label
+            for="accept"
+            >I´ve read the <a routerLink="privacypolicy">privacy policy</a> and
+            agree to the processing of my data aus outlined.</label
+          >
+          <!-- @if (!agree.valid && !agree.disabled && contactForm.submitted) {
+            <span>Please check the agreement!</span>
+            } -->
+        </div>
+ 
         <button type="submit">Send message :)</button>
       </form>
     </div>

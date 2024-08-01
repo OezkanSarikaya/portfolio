@@ -29,6 +29,7 @@ gap:24px;
   background-repeat: no-repeat;
   background-position: left 40vh;
   background-size: 100% 90%;
+  
   height: 100vh;
   position: absolute;
   top: 0;
@@ -53,9 +54,9 @@ gap:24px;
   gap: 32px;
   align-items: center;
   position: absolute;
-  bottom: 56px;
+  bottom: 36px;
   left: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .heroRight {
@@ -86,9 +87,12 @@ gap:24px;
   }
   h4 {
     transform: rotate(-90deg);
-    font-size: 64px;
+    font-size: 70px;
+    width: 99px;
+    display: flex;
+    justify-content: center;
     font-weight: 400;
-    line-height: 76.8px;
+    // line-height: 46.8px;
     text-align: left;
     margin: 0;
     white-space: nowrap;
@@ -107,7 +111,7 @@ gap:24px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .heroContactIcons {
     gap: 18px;
   }
@@ -115,8 +119,9 @@ gap:24px;
   .innerBackground {
     background-image: url("./../../../assets/img/28. Hero Background.png");
     background-repeat: no-repeat;
-    background-position: left 210px;
-    background-size: 100% 100%;
+    background-position: left 25vh;
+    // background-size: 100% 100%;
+    background-size: 1442px 1079px;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -131,27 +136,40 @@ gap:24px;
   }
 
   .hero {
-    flex-direction: column;
+    // flex-direction: column;
+    display:block;
     background-position-x: center;
-    background-size: 120%;
+    // background-size: 120%;
+
+    // background-position: 60px 40px;
+    background-size: 110%;
+
   }
   .heroRight {
+ 
     gap: 26px;
   }
   .heroText {
+    position: absolute;
+    top: 50%;
     height: 30vh;
     padding: 0 25px;
     justify-content: center;
     align-items: start;
+    
     h2 {
-      font-size: 37px;
+      font-size: 56px;
+      line-height: 64px;
     }
     h3 {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 42.5px;
+      line-height: 46px;
     }
     h4 {
-      font-size: 32px;
+      font-size: 44px;
+      line-height: 44px;
+    
+      width:52px;
     }
   }
   .heroImage,
@@ -165,5 +183,64 @@ gap:24px;
     img {
       width: 100%;
     }
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  .heroText {
+    position: absolute;
+    top: 62%;
+    height: 30vh;
+    padding: 0 25px;
+    justify-content: center;
+    align-items: start;
+    
+    h2 {
+      font-size: 8.5vw;
+      line-height: 10.0vw;
+    }
+    h3 {
+      font-size: 6.5vw;
+      line-height: 8.5vw;
+    }
+    h4 {
+      font-size: 7.0vw;
+      // line-height: 34px;    
+      width:42px;
+    }
+  }
+
+
+  .innerBackground {
+    background-image: url("./../../../assets/img/28. Hero Background.png");
+    background-repeat: no-repeat;
+    background-position: left 25vw;
+    // background-size: 100% 100%;
+    background-size: 1442px 1079px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .innerBackground {
+    background-image: url("./../../../assets/img/28. Hero Background.png");
+    background-repeat: no-repeat;
+    background-position: left 12%;
+    // background-size: 100% 100%;
+    background-size: 1442px 1079px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
   }
 }

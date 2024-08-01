@@ -1,5 +1,6 @@
 <?php
 
+
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
         header("Access-Control-Allow-Origin: *");

@@ -18,9 +18,11 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    checkbox: false
   };
 
-  mailTest = true;
+  mailTest = false;
+  
 
   post = {
     endPoint: 'https://oezkan-sarikaya.de/sendMail.php',

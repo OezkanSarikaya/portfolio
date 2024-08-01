@@ -33,17 +33,15 @@
   gap: 0px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 .burgermenu, .mobileNav {
 display: none;
 }
 
-// .dnone {display: none;}
-// .dnone {display: flex;}
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
  
   .mobileNav {display: flex;
     flex-direction: column;

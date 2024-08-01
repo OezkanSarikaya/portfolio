@@ -71,7 +71,9 @@ button {
   padding: 15px 30px;
   border-radius: 10px;
   color: white;
-  cursor: pointer;
+  font-size: 23px;
+  // cursor: pointer;
+  line-height:27.6px;
 }
 
 h2 {
@@ -104,6 +106,27 @@ h2 {
 label a {
   font-size: 14px;
   font-weight: 400;
+}
+
+.contactButton {
+  border: unset;
+  cursor: pointer;
+  background-color:chartreuse;
+  padding: 15px 30px 15px 30px;
+  gap: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: center;
+  width: fit-content;
+  transition: all 125ms ease-in-out;
+}
+
+.contactButton:hover {
+  background-color:#9747ff;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {

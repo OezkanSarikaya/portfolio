@@ -80,17 +80,24 @@
         </div>
 
         <div class="checkbox">
-          <input type="checkbox" name="agree" id="accept" required /><label
+          <input #checkbox="ngModel" [(ngModel)]="contactData.checkbox" type="checkbox" name="agree" id="accept" required />
+          <label
             for="accept"
             >I´ve read the <a routerLink="privacypolicy">privacy policy</a> and
-            agree to the processing of my data aus outlined.</label
+            agree to the processing of my data as outlined.</label
           >
-          <!-- @if (!agree.valid && !agree.disabled && contactForm.submitted) {
+          @if (checkbox.value == false && contactForm.submitted) {
             <span>Please check the agreement!</span>
-            } -->
+            }
         </div>
- 
+        @if (checkbox.value == true && contactForm.valid) {
+   
+          <a class="contactButton" type="submit">Send message :)</a>
+          
+          }
+          @else {
         <button type="submit">Send message :)</button>
+      }
       </form>
     </div>
   </div>

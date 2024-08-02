@@ -3,18 +3,40 @@
   border: 4px solid #70e61c;
   max-width: 851.5px;
   // height: 272px;
-  padding: 0px 96px 48px 96px;
+  padding: 48px 96px;
   // gap: 44px;
   border-radius: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 272px;
+  z-index: -1;
+  gap:24px;
+  // margin:24px 24px;
 }
+
+.referenceNavIconHover:hover circle {
+  stroke:#70e61c;  
+}
+
+.referenceNavIconHover circle {  
+  stroke:#141D2F;
+  transition: stroke 125ms ease-in-out;
+}
+
+
+
 .testimonial {
   display: flex;
   justify-content: space-between;
   gap: 24px;
   align-items: center;
+  padding:24px 24px;
+
+  // background-color: red;
+  background-image: url("./../../../assets/img/Frame281.png");
+  background-repeat: no-repeat;
+  background-position: top -8px left 6px;
 }
 
 // .profile {
@@ -33,7 +55,7 @@
   width: 97px;
   object-fit: contain;
   position: relative;
-  top: -60px;
+  top: -35px;
   left: -160px;
 }
 p {
@@ -49,6 +71,10 @@ p {
 .person {
   text-align: right;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap:16px;
+  white-space: nowrap;
 }
 #references {
   // background-image: url('./../../../assets/img/Green shadow 3.png');
@@ -65,16 +91,34 @@ p {
   justify-content: center;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-    #references {padding: 48px 25px;}
+
+.svgLine {
+width:100%;
+background-color: red;
+
+}
+@media screen and (max-width: 1024px) {
+  #references {
+    padding: 48px 25px;
+  }
   .testimonial {
     flex-direction: column-reverse;
-    gap:24px;
+    gap: 24px;
     align-items: center;
+    background-position: top 285px left 6px;
   }
   .testimonialBox {
+    padding: 48px 25px;
+  }
 
-    padding: 16px;
-
+  .person {
+    text-align: left;
+    font-size: 16px;
+    align-items: flex-start; 
+    // gap:16px;
+    white-space: wrap;
+   flex-direction: column;
+   svg {margin-top:16px;width:25%;}
+    
   }
 }

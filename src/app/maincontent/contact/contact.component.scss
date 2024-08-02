@@ -59,11 +59,17 @@ border-color:#70E61C;
 
 .redBorder {
   border-color:red;
+  background-image: url('./../../../assets/img/icons/svg/invalid.png');
+  background-repeat: no-repeat;
+  background-position: right 16px top 8px;
 }
 
 
 .greenBorder {
   border-color:#70E61C;
+  background-image: url('./../../../assets/img/icons/svg/valid.png');
+  background-repeat: no-repeat;
+  background-position: right 16px top 8px;
 }
 textarea {
   min-height: 202px;
@@ -128,7 +134,7 @@ label a {
 .contactButton {
   border: unset;
   cursor: pointer;
-  background-color:chartreuse;
+  background-color:#70E61C;
   padding: 15px 30px 15px 30px;
   gap: 10px;
   border-radius: 10px;
@@ -146,7 +152,18 @@ label a {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
+.upButton {
+  max-width: 1440px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px 100px;
+    svg {cursor: pointer;
+    &:hover path{fill:#70E61C;}
+    &:hover rect {stroke:#70E61C;}
+    }
+}
+
+@media screen and (max-width: 1024px) {
   .contactpage {
     // display: flex;
     // gap:32px;

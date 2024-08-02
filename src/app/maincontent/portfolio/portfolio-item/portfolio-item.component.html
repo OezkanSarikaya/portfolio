@@ -1,0 +1,35 @@
+
+
+
+  <div
+  data-aos="zoom-in"
+    class="project"
+    [ngClass]="{
+      even: singleportfolio.index % 2 == 0,
+      odd: singleportfolio.index % 2 != 0 
+    }"
+  >
+    <div class="img">
+      <img
+        src="{{ singleportfolio.image }}"
+        alt="{{ singleportfolio.headline }}"
+      />
+    </div>
+    <div class="projectdetails">
+      <h3>{{ singleportfolio.headline }}</h3>
+      <h4>{{ singleportfolio.subheadline }}</h4>
+      <p>{{ singleportfolio.text }}</p>
+      <div class="buttons">
+        <a href="{{ singleportfolio.demoUrl }}" class="primary" target="_blank"
+          >Live test</a
+        >
+        <a
+          href="{{ singleportfolio.githubUrl }}"
+          target="_blank"
+          class="secondary"
+          >Github</a
+        >
+      </div>
+    </div>
+  </div>
+

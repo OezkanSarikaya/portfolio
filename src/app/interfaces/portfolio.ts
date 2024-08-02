@@ -4,5 +4,6 @@ export interface Portfolio {
     text: string,
     image:string,
     githubUrl:string,
-    demoUrl:string
+    demoUrl:string,
+    index:number
 }

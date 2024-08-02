@@ -31,7 +31,7 @@ export class ReferencesComponent {
   currentPerson = this.testimonials[0].person;
   currentImage= this.testimonials[0].image;
   currentPostId = 0;
-  currentAnimate = "";
+  // currentAnimate = "";
 
   navigate(postId: number) {
     this.currentText = this.testimonials[postId].text;
@@ -41,18 +41,18 @@ export class ReferencesComponent {
   }
 
   next() {
-    this.currentAnimate = "";
+    // this.currentAnimate = "";
     if (this.currentPostId >= this.testimonials.length-1) {this.currentPostId=-1}
     let postId = this.currentPostId+1;
     this.currentText = this.testimonials[postId].text;
     this.currentPerson = this.testimonials[postId].person;
     this.currentImage = this.testimonials[postId].image;
     this.currentPostId = postId;
-    this.currentAnimate = "animate__fadeIn";
+    // this.currentAnimate = "animate__fadeIn";
   }
 
   back() {
-    this.currentAnimate = "";
+    // this.currentAnimate = "";
     if (this.currentPostId == 0) {
       this.currentPostId = this.testimonials.length;
     }
@@ -61,6 +61,6 @@ export class ReferencesComponent {
     this.currentPerson = this.testimonials[postId].person;
     this.currentImage = this.testimonials[postId].image;
     this.currentPostId = postId;
-    this.currentAnimate = "animate__fadeIn";
+    // this.currentAnimate = "animate__fadeIn";
   }
 }

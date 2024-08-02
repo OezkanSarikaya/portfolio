@@ -15,4 +15,10 @@ export class AppComponent {
   title = 'portfolio';
 }
 
-AOS.init();
+AOS.init(
+{
+  useClassNames: true,
+  // initClassName: false,
+  // animatedClassName: 'animated',
+}
+);

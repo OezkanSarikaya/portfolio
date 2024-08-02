@@ -1,4 +1,4 @@
-<div class="portfolio" id="portfolio">
+<div data-aos="fade-right" class="portfolio" id="portfolio">
   <div class="innerportfolio">
     <div class="maxContentWith">
       <h2>Portfolio</h2>
@@ -8,28 +8,9 @@
       </p>
 
       @for(portfolio of portfolios; track portfolios; let index = $index) {
-      <div class="project">
-        <div class="img">
-          <img src="{{ portfolio.image }}" alt="" />
-        </div>
-        <div class="projectdetails">
-          <h3>{{ portfolio.headline }}</h3>
-          <h4>{{ portfolio.subheadline }}</h4>
-          <p>{{ portfolio.text }}</p>
-          <div class="buttons">
-            <a href="{{ portfolio.demoUrl }}" class="primary" target="_blank"
-              >Live test</a
-            >
-            <a
-              href="{{ portfolio.githubUrl }}"
-              target="_blank"
-              class="secondary"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
+        <app-portfolio-item class="projectlist" [singleportfolio]='portfolio'></app-portfolio-item>
       }
+ 
     </div>
   </div>
 </div>

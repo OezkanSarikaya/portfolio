@@ -33,9 +33,11 @@ h3 {
   width:100%;
   span {color:red;
     display: block;
+
   margin:6px 0 0 20px;}
   padding:0;
   font-size:16px;
+
 }
 
 .inputField {
@@ -46,8 +48,23 @@ h3 {
   padding: 15px 25px;
   width: 100%;
   color: white;
+  &:focus {
+    outline: none !important;
+    border:1px solid #9747ff;
+  }
+  &:hover {
+border-color:#70E61C;
+  }
 }
 
+.redBorder {
+  border-color:red;
+}
+
+
+.greenBorder {
+  border-color:#70E61C;
+}
 textarea {
   min-height: 202px;
 }
@@ -72,7 +89,7 @@ button {
   border-radius: 10px;
   color: white;
   font-size: 23px;
-  // cursor: pointer;
+  cursor:not-allowed;
   line-height:27.6px;
 }
 

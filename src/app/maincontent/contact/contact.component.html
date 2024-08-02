@@ -33,9 +33,11 @@
       >
         <div class="formElements">
           <input
+          
             class="inputField"
             #name="ngModel"
             [(ngModel)]="contactData.name"
+            [ngClass]="{ redBorder:!name.valid && contactForm.submitted,greenBorder:name.valid && contactForm.touched}"
             type="text"
             placeholder="Your name"
             name="yourname"
@@ -48,8 +50,10 @@
         </div>
 
         <div class="formElements">
+          
           <input
             class="inputField"
+            [ngClass]="{ redBorder:!email.valid && contactForm.submitted,greenBorder:email.valid && contactForm.touched}"
             #email="ngModel"
             [(ngModel)]="contactData.email"
             type="email"
@@ -66,6 +70,7 @@
         <div class="formElements">
           <textarea
             class="inputField"
+            [ngClass]="{ redBorder:!message.valid && contactForm.submitted,greenBorder:message.valid && contactForm.touched}"
             #message="ngModel"
             [(ngModel)]="contactData.message"
             name="message"
@@ -79,15 +84,15 @@
           }
         </div>
 
-        <div class="checkbox">
+        <div class="checkbox formElements">
           <input #checkbox="ngModel" [(ngModel)]="contactData.checkbox" type="checkbox" name="agree" id="accept" required />
           <label
             for="accept"
             >I´ve read the <a routerLink="privacypolicy">privacy policy</a> and
             agree to the processing of my data as outlined.</label
           >
-          @if (checkbox.value == false && contactForm.submitted) {
-            <span>Please check the agreement!</span>
+          @if (checkbox.value == false && contactForm.submitted ) {
+            <span>Please accept the privacy policy!</span>
             }
         </div>
         @if (checkbox.value == true && contactForm.valid) {

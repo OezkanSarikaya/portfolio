@@ -3,12 +3,14 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size:30vw;
+  
 }
 
 .contactpage {
   display: flex;
   gap: 32px;
-  padding: 32px 100px;
+  padding: 36px 100px;
+  
 }
 
 .contactText,
@@ -163,12 +165,14 @@ label a {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .contactpage {
-    // display: flex;
-    // gap:32px;
     padding: 32px 25px;
     flex-direction: column;
+  }
+
+  .upButton {
+    padding: 32px 25px; 
   }
 
   .contactText,

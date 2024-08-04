@@ -38,8 +38,8 @@ a {
   transition: background-color 125ms ease-in-out;
 }
 
-button:hover,
-a:hover {
+button:hover:not(.imgLink),
+a:hover:not(.imgLink){
   background-color: #70e61c;
 }
 
@@ -82,13 +82,20 @@ a:hover {
 }
 .img {
   max-width: 50%;
+  
   img {
     width: 100%;
+    transition: transform 125ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform:scale(1.1);
+    }
   }
 }
 .buttons {
   display: flex;
   gap: 86px;
+  white-space: nowrap;
 }
 
 h2 {

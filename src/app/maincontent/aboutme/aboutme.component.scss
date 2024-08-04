@@ -4,9 +4,9 @@
   padding: 0 100px;
   // justify-content: space-around;
   // gap:48px;
-  .innerHeader {
-    padding: 0 25px; 
-  }
+  // .innerHeader {
+  //   padding: 0 25px; 
+  // }
 }
 img {
   border: 4px solid #70e61c;
@@ -21,8 +21,8 @@ img {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
-  padding: 48px 0px;
-  padding-top: 110px;
+  padding: 36px 0px;
+  // padding-top: 110px;
   display: flex;
   align-items: center;
   // z-index: -3;
@@ -50,7 +50,7 @@ tr {vertical-align: top;
 }
 td {padding-bottom: 16px;}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .inneraboutme {
     padding: 0 25px;
   }

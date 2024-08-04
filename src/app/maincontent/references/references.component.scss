@@ -75,13 +75,15 @@ p {
   align-items: center;
   gap:16px;
   white-space: nowrap;
+  span {
+    font-family: "Montserrat";
+  }
+  
 }
+
 #references {
-  // background-image: url('./../../../assets/img/Green shadow 3.png');
-  // background-repeat: no-repeat;
-  // background-position: center right;
-  // background-size: contain;
-  padding: 48px 100px;
+
+  padding: 36px 100px;
 }
 
 .testimonialNav {
@@ -97,7 +99,12 @@ width:100%;
 background-color: red;
 
 }
-@media screen and (max-width: 1024px) {
+
+
+
+
+
+@media screen and (max-width: 900px) {
   #references {
     padding: 48px 25px;
   }

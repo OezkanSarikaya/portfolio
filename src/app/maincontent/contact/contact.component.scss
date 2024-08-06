@@ -2,15 +2,14 @@
   background-image: url("./../../../assets/img/Purple shadow 4.png");
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size:30vw;
-  
+  background-size: 30vw;
 }
 
 .contactpage {
   display: flex;
   gap: 32px;
   padding: 36px 100px;
-  
+  position: relative;
 }
 
 .contactText,
@@ -32,14 +31,14 @@ h3 {
 }
 
 .formElements {
-  width:100%;
-  span {color:red;
+  width: 100%;
+  span {
+    color: red;
     display: block;
-
-  margin:6px 0 0 20px;}
-  padding:0;
-  font-size:16px;
-
+    margin: 6px 0 0 20px;
+  }
+  padding: 0;
+  font-size: 16px;
 }
 
 .inputField {
@@ -52,24 +51,23 @@ h3 {
   color: white;
   &:focus {
     outline: none !important;
-    border:1px solid #9747ff;
+    border: 1px solid #9747ff;
   }
   &:hover {
-border-color:#70E61C;
+    border-color: #70e61c;
   }
 }
 
 .redBorder {
-  border-color:red;
-  background-image: url('./../../../assets/img/icons/svg/invalid.png');
+  border-color: red;
+  background-image: url("./../../../assets/img/icons/svg/invalid.png");
   background-repeat: no-repeat;
   background-position: right 16px top 8px;
 }
 
-
 .greenBorder {
-  border-color:#70E61C;
-  background-image: url('./../../../assets/img/icons/svg/valid.png');
+  border-color: #70e61c;
+  background-image: url("./../../../assets/img/icons/svg/valid.png");
   background-repeat: no-repeat;
   background-position: right 16px top 8px;
 }
@@ -80,7 +78,6 @@ textarea {
 ::placeholder {
   color: rgba(255, 255, 255, 0.479);
   font-size: 16px;
-  //   font-weight: 200;
   line-height: 19.2px;
   text-align: left;
 }
@@ -97,8 +94,8 @@ button {
   border-radius: 10px;
   color: white;
   font-size: 23px;
-  cursor:not-allowed;
-  line-height:27.6px;
+  cursor: not-allowed;
+  line-height: 27.6px;
 }
 
 h2 {
@@ -136,7 +133,7 @@ label a {
 .contactButton {
   border: unset;
   cursor: pointer;
-  background-color:#70E61C;
+  background-color: #70e61c;
   padding: 15px 30px 15px 30px;
   gap: 10px;
   border-radius: 10px;
@@ -150,29 +147,68 @@ label a {
 }
 
 .contactButton:hover {
-  background-color:#9747ff;
+  background-color: #9747ff;
   transform: scale(1.2);
+}
+
+.d-none {display: none;}
+
+.sentBox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: red; */
+  // height:100vh;
+  // z-index: 5;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  // background-color: rgba(0,0,0,0.6);
+}
+
+.sentMessage {
+background-color: #70e61c;
+padding:20px;
+border-radius: 16px;
+font-size: 24px;
+
 }
 
 .upButton {
   max-width: 1440px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 24px 100px;
-    svg {cursor: pointer;
-    &:hover path{fill:#70E61C;}
-    &:hover rect {stroke:#70E61C;}
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 100px;
+
+  svg {
+    cursor: pointer;
+    path,
+    rect {
+      transition: all 125ms ease-in-out;
     }
+    &:hover path {
+      fill: #70e61c;
+    }
+    &:hover rect {
+      stroke: #70e61c;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
   .contactpage {
     padding: 32px 25px;
     flex-direction: column;
+    
   }
 
   .upButton {
-    padding: 32px 25px; 
+    padding: 32px 25px;
   }
 
   .contactText,

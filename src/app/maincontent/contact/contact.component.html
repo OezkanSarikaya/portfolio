@@ -18,6 +18,10 @@
   </h2>
   <div class="maxContentWith">
     <div class="contactpage">
+      <div [ngClass]="{'sentBox':sent}" class="d-none">
+        <div class="sentMessage animate__animated animate__bounceInUp">
+        Sending successful!</div>
+      </div>
       <div class="contactText">
         <h3>Got a problem to solve?</h3>
         <p>

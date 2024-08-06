@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+[x: string]: any;
 
 
   http = inject(HttpClient)
@@ -22,7 +23,8 @@ export class ContactComponent {
     checkbox: false
   };
 
-  mailTest = false;
+  mailTest = true;
+  sent = false;
   
 
   post = {
@@ -50,12 +52,16 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => this.sent = true,
         });
     } 
-    // else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-    //   ngForm.resetForm();
-    //   console.info('send post complete');
-    // }
+    else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      ngForm.resetForm();
+      console.info('sending post complete');
+      this.sent = true;
+      setTimeout(() => {
+        this.sent = false;
+      }, 2000);
+    }
   }
 }

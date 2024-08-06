@@ -60,9 +60,11 @@
       </svg>
     </a>
     <nav class="desktopNav">
-      <a href="#aboutme">About me</a>
-      <a href="#skills">Skills</a>
+      <a href="#aboutme">{{ "aboutme" | translate }}</a>
+      <a href="#skills">{{ "skills" | translate }}</a>
       <a href="#portfolio">Portfolio</a>
+      <span (click)="translate.switchLanguage('en')">EN</span>
+      <span (click)="translate.switchLanguage('de')">DE</span>
     </nav>
     <div class="burgermenu">
       <svg
@@ -95,15 +97,15 @@
     </div>
   </div>
 </div>
-<div
-  id="mobileMenu"
-  class="mobileNavContainer"
-  *ngIf="mobileNavOpen"
->
+<div id="mobileMenu" class="mobileNavContainer" *ngIf="mobileNavOpen">
   <nav class="mobileNav">
     <a href="#aboutme" (click)="toggleMobileNav()">About me</a>
     <a href="#skills" (click)="toggleMobileNav()">Skills</a>
     <a href="#portfolio" (click)="toggleMobileNav()">Portfolio</a>
     <a href="#contact" (click)="toggleMobileNav()">Contact</a>
+
   </nav>
+
+  <!-- <p>{{ "frontend" | translate }}</p>
+  <p>{{ "developer" | translate }}</p> -->
 </div>

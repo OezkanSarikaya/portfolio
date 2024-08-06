@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-
-
-
 export class HeaderComponent {
+  translate = inject(TranslationService);
   mobileNavOpen = false;
 
   mobileMenu = document.getElementById('mobileMenu');
@@ -26,7 +26,7 @@ export class HeaderComponent {
       if (this.mobileMenu) {
         this.mobileMenu.classList.add('animate__slideInRight');
       }
-      
+
       // this.mobileMenu.classList.add('animate__slideInRight');
     } else {
       body.classList.remove('noscroll');

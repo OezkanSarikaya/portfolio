@@ -15,8 +15,11 @@
 
 .desktopNav {
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 29px;
+  span {
+    cursor: pointer;
+  }
   a {
     font-size: 23px;
     font-weight: 400;

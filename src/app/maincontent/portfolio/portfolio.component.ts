@@ -38,6 +38,15 @@ export class PortfolioComponent {
       demoUrl:'https://oezkan-sarikaya.developerakademie.net/pokedex/',
       index: 3
     }, 
+    {
+      headline: 'Visualdenker',
+      subheadline: 'WordPress | HTML | CSS | Responsive',
+      text: 'A WordPress Site with template adjustments and different Plugins.',
+      image:'./../../../assets/img/projectimages/visualdenker.png',
+      githubUrl:'',
+      demoUrl:'https://www.visualdenker.com/',
+      index: 4
+    }, 
   ];
 
 

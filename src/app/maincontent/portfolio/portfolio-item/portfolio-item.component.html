@@ -25,12 +25,13 @@
         <a href="{{ singleportfolio.demoUrl }}" class="primary" target="_blank"
           >Live test</a
         >
+        @if (singleportfolio.githubUrl) {
         <a
           href="{{ singleportfolio.githubUrl }}"
           target="_blank"
           class="secondary"
-          >Github</a
-        >
+          >Github</a>
+        }
       </div>
     </div>
   </div>

@@ -5,6 +5,22 @@
   background-size: 30vw;
 }
 
+.h2div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 48px;
+  svg {
+    position: absolute;
+    width: 78%;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
 .contactpage {
   display: flex;
   gap: 32px;
@@ -103,6 +119,8 @@ h2 {
   display: flex;
   align-items: center;
   gap: 24px;
+  background-color: #141d2f;
+  padding: 0 24px;
 }
 
 .checkbox input[type="checkbox"] {

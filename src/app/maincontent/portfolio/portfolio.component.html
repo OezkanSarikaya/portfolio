@@ -1,16 +1,32 @@
-<div data-aos="fade-right" class="portfolio" id="portfolio">
-  <div class="innerportfolio">
-    <div class="maxContentWith">
-      <h2>Portfolio</h2>
+<div data-aos="fade-left" id="portfolio">
+  <div class="h2div">
+    <svg width="100%" height="100%">
+      <line
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="0%"
+        stroke="#9747FF"
+        stroke-width="8"
+        stroke-linecap="round"
+      ></line>
+    </svg>
+    <h2>Portfolio</h2>
+  </div>
+
+  <div class="maxContentWith">
+    <div class="innerportfolio portfolio">
       <p>
         Explore a selection of my work here - Interact with projects to see my
         skills in action.
       </p>
 
       @for(portfolio of portfolios; track portfolios; let index = $index) {
-        <app-portfolio-item class="projectlist" [singleportfolio]='portfolio'></app-portfolio-item>
+      <app-portfolio-item
+        class="projectlist"
+        [singleportfolio]="portfolio"
+      ></app-portfolio-item>
       }
- 
     </div>
   </div>
 </div>

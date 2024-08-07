@@ -1,25 +1,23 @@
-<div id="contact">
-  <h2>
-    <svg
-      width="537"
-      height="4"
-      viewBox="0 0 537 4"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0 2L535 2.00005"
+<div id="contact" data-aos="fade-right">
+  <div class="h2div">
+    <svg width="100%" height="100%">
+      <line
+        x1="0%"
+        y1="0%"
+        x2="100%"
+        y2="0%"
         stroke="#9747FF"
-        stroke-width="4"
+        stroke-width="8"
         stroke-linecap="round"
-      />
+      ></line>
     </svg>
-    Contact
+    <h2> Contact
   </h2>
+</div>
   <div class="maxContentWith">
     <div class="contactpage">
-      <div [ngClass]="{'sentBox':sent}" class="d-none">
-        <div class="sentMessage animate__animated animate__bounceInUp">
+      <div [ngClass]="{'sentBox':sent, 'animate__animated animate__slideInUp':sent}" class="d-none">
+        <div class="sentMessage ">
         Sending successful!</div>
       </div>
       <div class="contactText">
@@ -92,7 +90,7 @@
           <input #checkbox="ngModel" [(ngModel)]="contactData.checkbox" type="checkbox" name="agree" id="accept" required />
           <label
             for="accept"
-            >I´ve read the <a routerLink="privacypolicy">privacy policy</a> and
+            >I´ve read the <a routerLink="privacy">privacy policy</a> and
             agree to the processing of my data as outlined.</label
           >
           @if (checkbox.value == false && contactForm.touched ) {

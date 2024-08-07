@@ -12,7 +12,7 @@ export class ReferencesComponent {
   testimonials: Reference[] = [
     {
       text: 'Özkan has delivered outstanding performance in our team project. He possesses a deep understanding of JavaScript and has effectively utilized this knowledge to solve complex problems and develop innovative solutions. His ability to write clear and efficient code has significantly advanced our project. Özkan also excels in teamwork, contributing valuable ideas and actively supporting other team members. His expertise and dedication have been instrumental to the success of our project.',
-      image: './assets/img/personB.png',
+      image: './assets/img/alain.png',
       person: 'Alain Soltau - Team Partner',
     },
     {

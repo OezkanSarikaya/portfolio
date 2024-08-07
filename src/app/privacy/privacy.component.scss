@@ -1,0 +1,10 @@
+.innerprivacy {
+    padding: 0 100px;
+    p {text-align: justify;}
+}
+
+@media screen and (max-width: 900px) {
+    .innerprivacy {
+      padding: 0 25px;
+    }
+  }

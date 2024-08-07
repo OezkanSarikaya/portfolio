@@ -13,7 +13,7 @@ export class PortfolioComponent {
   portfolios: Portfolio[] = [
     {
       headline: 'Join',
-      subheadline: 'Angular | TypeScript | HTML | CSS | Firebase',
+      subheadline: 'JavaScript | HTML | CSS | Firebase',
       text: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       image:'./../../../assets/img/projectimages/join.png',
       githubUrl:'https://github.com/OezkanSarikaya/join',

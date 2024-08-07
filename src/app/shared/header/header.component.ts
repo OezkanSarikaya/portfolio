@@ -14,7 +14,7 @@ export class HeaderComponent {
   translate = inject(TranslationService);
   mobileNavOpen = false;
 
-  mobileMenu = document.getElementById('mobileMenu');
+  mobileNavContainer = document.getElementById('mobileNavContainer');
 
   toggleMobileNav() {
     this.mobileNavOpen = !this.mobileNavOpen;
@@ -23,15 +23,15 @@ export class HeaderComponent {
     // let mobileMenu = document.getElementById('mobileMenu');
     if (this.mobileNavOpen) {
       body.classList.add('noscroll');
-      if (this.mobileMenu) {
-        this.mobileMenu.classList.add('animate__slideInRight');
+      if (this.mobileNavContainer) {
+        this.mobileNavContainer.classList.add('animate__slideOutRight');
       }
 
       // this.mobileMenu.classList.add('animate__slideInRight');
     } else {
       body.classList.remove('noscroll');
-      if (this.mobileMenu) {
-        this.mobileMenu.classList.add('animate__slideOutRight');
+      if (this.mobileNavContainer) {
+        this.mobileNavContainer.classList.add('animate__slideInRight');
       }
       // mobileNav.classList.add('animate__slideOutRight');
     }

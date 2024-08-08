@@ -63,7 +63,7 @@
     <nav class="desktopNav">
       <a href="#aboutme">{{ "aboutme" | translate }}</a>
       <a href="#skills">{{ "skills" | translate }}</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#portfolio">{{ "Portfolio" | translate }}</a>
 
   
 <div>
@@ -102,13 +102,14 @@
     </div>
   </div>
 </div>
-<div id="mobileMenu" class="mobileNavContainer animate__animated animate__slideInRight" *ngIf="mobileNavOpen">
+<div id="mobileMenu" class="mobileNavContainer" *ngIf="mobileNavOpen">
+  <!-- <div id="mobileMenu" class="mobileNavContainer" > -->
+  <!-- <div id="mobileMenu" class="animate__animated" > -->
   <nav class="mobileNav">
     <a href="#aboutme" (click)="toggleMobileNav()">About me</a>
     <a href="#skills" (click)="toggleMobileNav()">Skills</a>
     <a href="#portfolio" (click)="toggleMobileNav()">Portfolio</a>
     <a href="#contact" (click)="toggleMobileNav()">Contact</a>
-
   </nav>
 
   <!-- <p>{{ "frontend" | translate }}</p>

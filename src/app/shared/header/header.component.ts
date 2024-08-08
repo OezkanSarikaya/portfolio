@@ -14,35 +14,27 @@ export class HeaderComponent {
   translate = inject(TranslationService);
   mobileNavOpen = false;
 
-  mobileNavContainer = document.getElementById('mobileNavContainer');
+  mobileNavContainer = document.getElementById('mobileMenu');
 
   toggleMobileNav() {
     this.mobileNavOpen = !this.mobileNavOpen;
     const body = document.getElementsByTagName('body')[0];
 
-    // let mobileMenu = document.getElementById('mobileMenu');
     if (this.mobileNavOpen) {
       body.classList.add('noscroll');
       if (this.mobileNavContainer) {
-        this.mobileNavContainer.classList.add('animate__slideOutRight');
+        this.mobileNavContainer.classList.remove('slideIn');
+        this.mobileNavContainer.classList.add('slideOut');
       }
-
-      // this.mobileMenu.classList.add('animate__slideInRight');
     } else {
       body.classList.remove('noscroll');
+
       if (this.mobileNavContainer) {
-        this.mobileNavContainer.classList.add('animate__slideInRight');
+        this.mobileNavContainer.classList.remove('slideOut');
+        this.mobileNavContainer.classList.add('slideIn');
       }
-      // mobileNav.classList.add('animate__slideOutRight');
     }
   }
 
-  // constructor() {
-  //   const body = document.getElementsByTagName('body')[0];
-  //   body.classList.add('noscroll');
-  // }
-  // ngOnDestroy() {
-  //    const body = document.getElementsByTagName('body')[0];
-  //    body.classList.remove('noscroll');
-  // }
+
 }

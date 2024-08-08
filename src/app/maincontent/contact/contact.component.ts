@@ -3,15 +3,19 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm  } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [RouterModule, FormsModule,CommonModule],
+  imports: [RouterModule, FormsModule,CommonModule,TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+
+  translate = inject(TranslationService);
 [x: string]: any;
 
 
@@ -23,7 +27,7 @@ export class ContactComponent {
     checkbox: false
   };
 
-  mailTest = true;
+  mailTest = false;
   sent = false;
   
 
@@ -52,7 +56,11 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => this.sent = true,
+          complete: () => {this.sent = true;
+            setTimeout(() => {
+              this.sent = false;
+            }, 2000);
+          }
         });
     } 
     else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {

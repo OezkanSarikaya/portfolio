@@ -13,6 +13,8 @@
   margin-left: -14px;
 }
 
+
+
 .desktopNav {
   display: flex;
   align-items: center;
@@ -45,6 +47,17 @@
   display: none;
 }
 
+// .d-none {display: none;}
+
+@keyframes slideIn {
+  from {transform:translateX(100vw);}
+  to {transform:translateX(0);}
+}
+
+@keyframes slideOut {
+  from {transform:translateX(0);}
+  to {transform:translateX(100vw);}
+}
 
 
 
@@ -67,7 +80,17 @@
       }
     }
   }
+
+  #mobileMenu .slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  #mobileMenu .slideOut {
+    animation: slideOut 1s ease-in-out;
+  }
+
   .mobileNavContainer {
+    // transform:translateX(-500px);
     background-color: #242830b7;
     height: 100vh;
     z-index: 5;

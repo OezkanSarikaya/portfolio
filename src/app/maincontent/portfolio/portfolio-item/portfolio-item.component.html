@@ -18,9 +18,20 @@
     </a>
     </div>
     <div class="projectdetails">
+
       <h3>{{ singleportfolio.headline }}</h3>
       <h4>{{ singleportfolio.subheadline }}</h4>
-      <p>{{ singleportfolio.text }}</p>
+      <p>
+
+        @if (translate.english) { 
+          {{ singleportfolio.text }}
+        }
+        @else {      
+          {{ singleportfolio.deutsch }}
+        }
+
+
+      </p>
       <div class="buttons">
         <a href="{{ singleportfolio.demoUrl }}" class="primary" target="_blank"
           >Live test</a

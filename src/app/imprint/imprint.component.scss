@@ -1,6 +1,12 @@
 .innerimprint {
     padding: 0 100px;
     p {text-align: justify;}
+    background-image: url('./../../assets/img/paragraph.png');
+    background-size: 90%;
+    // filter: grayscale(100%) opacity(10%);
+    // filter: opacity(10%);
+    height:calc(100vh - 260px);
+ 
 }
 
 @media screen and (max-width: 900px) {

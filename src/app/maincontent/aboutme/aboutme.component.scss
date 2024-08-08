@@ -16,12 +16,15 @@ img {
   z-index: 2;
 }
 
+p,td {line-height:24px;}
+
 .aboutme {
+  scroll-margin-top: 85px;
   background-image: url("./../../../assets/img/Purple shadow 2.png");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
-  padding: 36px 0px;
+  padding: 24px 0px;
   // padding-top: 110px;
   display: flex;
   align-items: center;

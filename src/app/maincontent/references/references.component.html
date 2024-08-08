@@ -2,7 +2,16 @@
   <div class="maxContentWith references">
     <div class="testimonial">
       <div class="testimonialBox">
-        <p>{{ currentText }}</p>
+        <p>
+        @if (translate.english) {
+       
+          {{ this.testimonials[currentPostId].text }}
+        }
+        @else {
+        
+          {{ this.testimonials[currentPostId].deutsch }}
+        }
+        </p>
         <div class="person">
           <svg style="width: 100%; height: 4px">
             <line

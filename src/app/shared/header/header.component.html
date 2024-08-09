@@ -61,7 +61,7 @@
     </a>
     <nav class="desktopNav">
       <a href="#aboutme">{{ "aboutme" | translate }}</a>
-      <a href="#skills">{{ "skills" | translate }}</a>
+      <a href="#skills">Skills</a>
       <a href="#portfolio">{{ "Portfolio" | translate }}</a>
 
       <div>
@@ -69,8 +69,8 @@
         <span (click)="translate.switchLanguage('de')">DE</span>
       </div>
     </nav>
-    <div class="burgermenu">
-      <svg
+    <div class="burgermenu" (click)="toggleMobileNav()" [ngClass]="{'open': mobileNavOpen}">
+      <!-- <svg
         (click)="toggleMobileNav()"
         width="32"
         height="31"
@@ -96,18 +96,22 @@
           stroke-width="2"
           stroke-linecap="round"
         />
-      </svg>
+      </svg> -->
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    
     </div>
   </div>
 </div>
-<div id="mobileMenu" class="mobileNavContainer" *ngIf="mobileNavOpen">
+<div id="mobileMenu" class="mobileNavContainer" [ngClass]="{'open': mobileNavOpen}">
   <!-- <div id="mobileMenu" class="mobileNavContainer" > -->
   <!-- <div id="mobileMenu" class="animate__animated" > -->
   <nav class="mobileNav">
-    <a href="#aboutme" (click)="toggleMobileNav()">About me</a>
+    <a href="#aboutme" (click)="toggleMobileNav()">{{ "aboutme" | translate }}</a>
     <a href="#skills" (click)="toggleMobileNav()">Skills</a>
-    <a href="#portfolio" (click)="toggleMobileNav()">Portfolio</a>
-    <a href="#contact" (click)="toggleMobileNav()">Contact</a>
+    <a href="#portfolio" (click)="toggleMobileNav()">{{ "Portfolio" | translate }}</a>
+    <a href="#contact" (click)="toggleMobileNav()">{{ "contactH2" | translate }}</a>
     <div>
       <span (click)="translate.switchLanguage('en')">EN</span> |
       <span (click)="translate.switchLanguage('de')">DE</span>

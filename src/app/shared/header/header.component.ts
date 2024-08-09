@@ -16,6 +16,11 @@ export class HeaderComponent {
 
   mobileNavContainer = document.getElementById('mobileMenu');
 
+
+  closeMenu() {
+    this.mobileNavOpen = false;
+  }
+
   toggleMobileNav() {
     this.mobileNavOpen = !this.mobileNavOpen;
     const body = document.getElementsByTagName('body')[0];

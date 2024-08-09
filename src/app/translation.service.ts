@@ -13,7 +13,6 @@ export class TranslationService {
     translate.setDefaultLang('en');    
   }
 
-
   public switchLanguage(language: string): void {
     this.translate.use(language);
     this.english = !this.english;    

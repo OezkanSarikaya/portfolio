@@ -22,7 +22,7 @@ export class PortfolioComponent {
       deutsch:'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
       image:'./../../../assets/img/projectimages/join.png',
       githubUrl:'https://github.com/OezkanSarikaya/join',
-      demoUrl:'https://oezkan-sarikaya.developerakademie.net/join/',
+      demoUrl:'https://join.oezkan-sarikaya.de',
       index: 1
     },
     {

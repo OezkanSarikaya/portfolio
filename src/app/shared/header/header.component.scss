@@ -6,7 +6,7 @@
   bottom: 0;
   background-color: #141d2f;
   height: 109px;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .logo {
@@ -41,11 +41,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+}
+.mobileNavContainer, .burgermenu {
+  display: none;
 }
 
 .burgermenu,
 .mobileNav {
-  display: none;
+  // display: none;
 }
 
 // .d-none {display: none;}
@@ -63,6 +67,11 @@
 
 
 @media screen and (max-width: 900px) {
+
+  .burgermenu {
+display:flex;
+
+  }
   .mobileNav {
     display: flex;
     flex-direction: column;
@@ -83,38 +92,91 @@
     }
   }
 
-  #mobileMenu .slideIn {
-    animation: slideIn 1s ease-in-out;
-  }
+  // #mobileMenu .slideIn {
+  //   animation: slideIn 1s ease-in-out;
+  // }
 
-  #mobileMenu .slideOut {
-    animation: slideOut 1s ease-in-out;
-  }
+  // #mobileMenu .slideOut {
+  //   animation: slideOut 1s ease-in-out;
+  // }
   .mobileNav {
     span {
       cursor: pointer;
     }
   }
 
+  .burgermenu {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 9100;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .line1 {
+    top: 0;
+  }
+  
+  .line2 {
+    top: 10px;
+  }
+  
+  .line3 {
+    top: 20px;
+  }
+  
+  /* Animation for transforming into a cross */
+  .burgermenu.open .line1 {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  
+  .burgermenu.open .line2 {
+    opacity: 0;
+  }
+  
+  .burgermenu.open .line3 {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+
   .mobileNavContainer {
     // transform:translateX(-500px);
-    background-color: #242830b7;
+    background-color: #141d2fcc;
     height: 100vh;
+    width:100vw;
     z-index: 5;
     overflow-y: hidden;
     position: fixed;
-    top: 0px;
-    left: 0;
+    top: 0;
+    // left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: start;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
+
+  .mobileNavContainer.open {
+    transform: translateX(0);
+  }
+
   .desktopNav {
     display: none;
   }
   .burgermenu {
-    display: inline;
+    // display: inline;
     cursor: pointer;
   }
 

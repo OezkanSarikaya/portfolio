@@ -1,6 +1,5 @@
 <div class="header">
   <div class="maxContentWith innerHeader">
-    
     <a href="#top">
       <svg
         width="150"
@@ -65,11 +64,10 @@
       <a href="#skills">{{ "skills" | translate }}</a>
       <a href="#portfolio">{{ "Portfolio" | translate }}</a>
 
-  
-<div>
-      <span (click)="translate.switchLanguage('en')">EN</span> |
-      <span (click)="translate.switchLanguage('de')">DE</span>
-    </div>
+      <div>
+        <span (click)="translate.switchLanguage('en')">EN</span> |
+        <span (click)="translate.switchLanguage('de')">DE</span>
+      </div>
     </nav>
     <div class="burgermenu">
       <svg
@@ -110,6 +108,10 @@
     <a href="#skills" (click)="toggleMobileNav()">Skills</a>
     <a href="#portfolio" (click)="toggleMobileNav()">Portfolio</a>
     <a href="#contact" (click)="toggleMobileNav()">Contact</a>
+    <div>
+      <span (click)="translate.switchLanguage('en')">EN</span> |
+      <span (click)="translate.switchLanguage('de')">DE</span>
+    </div>
   </nav>
 
   <!-- <p>{{ "frontend" | translate }}</p>

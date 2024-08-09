@@ -33,8 +33,7 @@
         #contactForm="ngForm"
       >
         <div class="formElements">
-          <input
-          
+          <input          
             class="inputField"
             #name="ngModel"
             [(ngModel)]="contactData.name"
@@ -44,10 +43,8 @@
             name="yourname"
             required
           />
-          @if (!name.valid && name.touched && !name.disabled) {
-         
+          @if (!name.valid && name.touched && !name.disabled) {         
           <span>{{ "contactFormError1" | translate }}</span>
-
           }
         </div>
 
@@ -90,7 +87,7 @@
           <input #checkbox="ngModel" [(ngModel)]="contactData.checkbox" type="checkbox" name="agree" id="accept" required />
           <label
             for="accept"
-            >{{ "contactFormLabel4a" | translate }} <a routerLink="privacy">{{ "contactFormLabel4b" | translate }}</a> {{ "contactFormLabel4c" | translate }}</label
+            >{{ "contactFormLabel4a" | translate }} <a routerLink="imprint">{{ "contactFormLabel4b" | translate }}</a> {{ "contactFormLabel4c" | translate }}</label
           >
           @if (checkbox.value == false && contactForm.touched ) {
             <span>{{ "contactFormError4" | translate }}</span>

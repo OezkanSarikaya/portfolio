@@ -1,8 +1,8 @@
 <div id="references">
   <div class="maxContentWith references">
     <div class="testimonial">
-      <div class="testimonialBox">
-        <p>
+      <div class="testimonialBox ">
+        <p id="testimonialText" [ngClass]="{'fade-in': animate}">
         @if (translate.english) {
        
           {{ this.testimonials[currentPostId].text }}
@@ -24,11 +24,11 @@
               style="stroke: #9747ff; stroke-width: 4px"
             ></line>
           </svg>
-          <span> {{ currentPerson }}</span>
+          <span [ngClass]="{'fade-in': animate}"> {{ currentPerson }}</span>
         </div>
       </div>
 
-      <img class="profile" src="{{ currentImage }}" alt="" />
+      <img class="profile" src="{{ currentImage }}" alt="" [ngClass]="{'fade-in': animate}"/>
     </div>
     <div class="testimonialNav">
       <svg

@@ -1,16 +1,71 @@
 .innerimprint {
     padding: 0 100px;
-    p {text-align: justify;}
-    background-image: url('./../../assets/img/paragraph.png');
-    background-size: 90%;
+    p {text-align: justify;
+    line-height: 20px;}
+
     // filter: grayscale(100%) opacity(10%);
     // filter: opacity(10%);
-    height:calc(100vh - 260px);
+    // height:calc(100vh - 260px);
  
+}
+
+a {text-decoration: none;
+  color:#9747FF;
+  transition: color 125ms ease-in-out;
+&:hover{
+  color:#70E61C;
+}
+}
+
+.imprint {
+  background-image: url('./../../assets/img/paragraph.png');
+  background-size: 70%;
+  background-position: center;
+
+}
+
+h1 {
+  font-size:42px;
+  line-height:42px;
+  font-weight: bold;
+}
+h2 {
+  font-size:36px;
+}
+
+h3 {
+  font-size:24px;
+  font-weight: bold;
+  line-height:32px;
+}
+
+hr {
+  border:none;
+  margin:36px 0;
+  height:1px;
+  background-color:white;
 }
 
 @media screen and (max-width: 900px) {
     .innerimprint {
       padding: 0 25px;
+      p {text-align: left;
+      font-size:14px;}
+    }
+
+    h1 {
+      font-size:38px;
+      line-height:38px;
+    }
+    h3 {
+      font-size:22px;
+      font-weight: bold;
+      line-height:30px;
+    }
+
+    h2 {
+      font-size:32px;
+      font-weight: bold;
+      line-height:32px;
     }
   }

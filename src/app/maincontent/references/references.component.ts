@@ -30,10 +30,10 @@ export class ReferencesComponent {
       person: 'Raudel Gómez Smith - Team Partner',
     },
     {
-      text: 'Thanks to his creative ideas and programming skills, the company had a competitive advantage and a unique selling point.',
-      deutsch:'Durch seine kreativen Ideen und Programmierkenntnisse, hatte das Unternehmen einen Wettbewerbsvorteil und ein Alleinstellungsmerkmal.',
-      image: './assets/img/Mask group.png',
-      person: 'Peter',
+      text: 'Özkan created a fantastic WordPress website for me. He provided excellent advice when choosing the theme and perfectly executed my ideas. The result exceeded my expectations. I continue to rely on his outstanding support through a service contract, which ensures that my website remains up-to-date and well-maintained. I am very satisfied and can recommend him without reservation.',
+      deutsch:'Özkan hat für mich eine großartige WordPress-Webseite erstellt. Bei der Auswahl des Themes hat er mich hervorragend beraten und meine Wünsche perfekt umgesetzt. Das Ergebnis hat meine Erwartungen übertroffen. Auch den laufenden Support nehme ich über einen Servicevertrag in Anspruch, sodass meine Webseite stets aktuell und gut gepflegt bleibt. Ich bin sehr zufrieden und kann ihn uneingeschränkt weiterempfehlen.',
+      image: './assets/img/andreas-pfaff-profilbild-grey-bg.png',
+      person: 'Andreas Pfaff - Visualdenker.com',
     },
   ];
 

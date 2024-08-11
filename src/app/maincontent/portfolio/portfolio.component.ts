@@ -22,7 +22,7 @@ export class PortfolioComponent {
       deutsch:'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
       image:'./../../../assets/img/projectimages/join.png',
       githubUrl:'https://github.com/OezkanSarikaya/join',
-      demoUrl:'https://join.oezkan-sarikaya.de',
+      demoUrl:'https://join.oezkan-sarikaya.de/',
       index: 1
     },
     {
@@ -32,7 +32,7 @@ export class PortfolioComponent {
       deutsch:'Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen das Killerhuhn zu kämpfen.',
       image:'./../../../assets/img/projectimages/el-pollo-loco.png',
       githubUrl:'https://github.com/OezkanSarikaya/canvasGame',
-      demoUrl:'https://oezkan-sarikaya.developerakademie.net/el-pollo-loco/',
+      demoUrl:'https://el-pollo-loco.oezkan-sarikaya.de/',
       index: 2
     },
     {

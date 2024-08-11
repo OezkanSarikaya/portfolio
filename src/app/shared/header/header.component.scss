@@ -17,7 +17,7 @@
 
 .desktopNav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 29px;
   span {
     cursor: pointer;
@@ -29,6 +29,11 @@
     text-align: left;
     transition: color 125ms ease-in-out;
     color:white;
+    padding-bottom:4px;
+    &.active {
+      color: #70e61c;    
+      border-bottom:4px solid #9747FF;
+    }
     &:hover {
       color: #70e61c;
     }
@@ -89,6 +94,7 @@ display:flex;
       &:hover {
         color: #70e61c;
       }
+ 
     }
   }
 
@@ -120,6 +126,7 @@ display:flex;
     position: absolute;
     left: 0;
     transition: all 0.3s ease;
+    border-radius:24px;
   }
   
   .line1 {

@@ -1,8 +1,18 @@
-.main {
-
-    background-image: url('./../../assets/img/Green shadow 3.png');
-background-repeat: no-repeat;
-background-position: right 80% ;
-background-size: 25%;
-overflow: hidden;
+#main {
+  background-image: url("./../../assets/img/Green shadow 3.png");
+  background-repeat: no-repeat;
+  background-position: right 80%;
+  background-size: 25%;
+  overflow: hidden;
 }
+
+#aboutme {
+    scroll-margin-top: 109px;
+}
+
+#portfolio {
+    scroll-margin-top: 99px;
+    padding-top: 24px ;
+}
+
+

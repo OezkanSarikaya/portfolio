@@ -11,5 +11,6 @@ import { EmailComponent } from '../../email/email.component';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+
   translate = inject(TranslationService);
 }

@@ -138,6 +138,7 @@ a svg {
   img {
     max-width: 646px;
     object-fit: contain;
+    margin-top: -50px;
   }
 }
 
@@ -147,7 +148,7 @@ a svg {
   }
 
   .innerBackground {
-    background-position: left 25vh;
+    background-position: left 35vh;
     background-size: 1442px 1079px;
     height: 100vh;
     position: absolute;
@@ -208,7 +209,7 @@ a svg {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 590px) {
   .heroText {
     position: absolute;
     top: 62%;
@@ -230,8 +231,12 @@ a svg {
     }
   }
 
+  .heroImage img {
+    margin-top: -30px;
+  }
+
   .innerBackground {
-    background-position: left 25vw;
+    background-position: left 35vw;
     background-size: 1442px 1079px;
     height: 100vh;
     position: absolute;
@@ -245,7 +250,7 @@ a svg {
 
 @media screen and (max-width: 430px) {
   .innerBackground {
-    background-position: left 12%;
+    background-position: left 20vw;
     background-size: 1442px 1079px;
     height: 100vh;
     position: absolute;

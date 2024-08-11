@@ -4,6 +4,10 @@
   background-position: left bottom;
   background-size: 30vw;
   scroll-margin-top: 110px;
+ 
+   
+
+  
 }
 b, strong {font-weight: bold;}
 // strong {font-weight: bold;}
@@ -27,7 +31,7 @@ b, strong {font-weight: bold;}
 .contactpage {
   display: flex;
   gap: 32px;
-  padding: 36px 100px;
+  padding: 36px 100px 80px 100px;
   position: relative;
 }
 
@@ -68,7 +72,7 @@ h3 {
   padding: 15px 25px;
   width: 100%;
   color: white;
-  transition: all 125ms ease-in-out;
+  transition: border 125ms ease-in-out;
   &:focus {
     outline: none !important;
     border: 1px solid #9747ff;

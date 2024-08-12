@@ -19,7 +19,7 @@
     "contactH2":"Contact",
     "contactH3":"Got a problem to solve?",
     "contactP1":"Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-    "contactP2":"Need a Frontend developer?",
+    "contactP2":"Need a Fullstack developer?",
     "contactP3":"Contact me!",
     "contactFormLabel1":"Your name",
     "contactFormLabel2":"Your email",
@@ -32,5 +32,6 @@
     "contactFormError2":"Please enter a valid email adress!",
     "contactFormError3":"Please enter a message!",
     "contactFormError4":"Please accept the privacy policy!",
-    "stack":"Fullstack"
+    "stack":"Fullstack",
+    "imprint":"Imprint"
 }

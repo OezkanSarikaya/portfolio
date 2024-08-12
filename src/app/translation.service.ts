@@ -14,7 +14,15 @@ export class TranslationService {
   }
 
   public switchLanguage(language: string): void {
+    // console.log('test');
+    
     this.translate.use(language);
-    this.english = !this.english;    
+    this.english = !this.english;  
+    if (this.english)   {
+      this.translate.use('en');
+    }
+    else {
+      this.translate.use('de');
+    }
   }
 }

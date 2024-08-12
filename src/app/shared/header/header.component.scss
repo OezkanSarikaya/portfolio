@@ -48,6 +48,14 @@
   align-items: center;
 
 }
+
+nav svg {cursor: pointer;}
+nav svg path {color:white;font-weight:bold;}
+
+.en rect {x:0.5;}
+.de rect {x:40;}
+
+rect.border {}
 .mobileNavContainer, .burgermenu {
   display: none;
 }

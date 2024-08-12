@@ -2,8 +2,8 @@
   height: 100vh;
   background-image: url("./../../../assets/img/29. photo shadows.png");
   background-repeat: no-repeat;
-  background-position: 60px 40px;
-  background-size: 707px 671px;
+  // background-position: 60px 40px;
+  // background-size: 707px 671px;
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
@@ -74,19 +74,42 @@ a svg {
   align-items: center;
 }
 
+.heroIconBox {
+  position: absolute;
+  // background-color:red;
+  top:92%;
+  left:0;
+  right:0;
+  z-index: 2;
+}
+
 .heroHeadline {
   display: flex;
   flex-direction: column;
 }
 
+.line {position: absolute;
+top:42%;
+width:14%;
+padding-right:100px;
+}
+
 .heroContactIcons {
+  width:100%;
+  max-width:1440px;
+  padding:0 100px;
+  margin:0 auto;
+  // background-color: #141D2F;
   display: flex;
   gap: 32px;
-  align-items: center;
-  position: absolute;
-  bottom: 36px;
-  left: 0;
-  z-index: 2;
+  align-items: center;  
+  // position: absolute;
+  // bottom: 36px;
+  // left: 0;
+  position: relative;
+  z-index: 5;
+  // padding-left:-100px;
+  // margin-left:100px;
 }
 
 .heroRight {
@@ -167,7 +190,7 @@ a svg {
   .hero {
     display: block;
     background-position-x: center;
-    background-size: 110%;
+    // background-size: 110%;
   }
 
   .heroRight {

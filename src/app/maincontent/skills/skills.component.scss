@@ -3,10 +3,45 @@
   align-items: start;
   padding: 36px 100px;
   // margin:0 !important;
-  
+}
+.outerBackgroundContainer {
+  // background-color: red;
+  // display: flex;
+  // align-items: end;
+  // justify-content: end;
+  position: relative;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  svg {
+    // background-color: greenyellow;
+    height: 4px;
+    position: absolute;
+    top:50%;
+    width:100%;
+    left:0;
+    z-index: 1;
+    margin-left:80%;
+
+  }
+  h2 {
+    // background-color: blue;
+    background-color: #141D2F;
+    z-index: 2;
+    width: fit-content;
+    text-align: right;
+   margin-right:-24px;
+     padding: 0 24px;
+  }
 }
 
-
+.padding {
+  padding: 36px 100px;
+  display: flex;
+  justify-content: end;
+}
+// .absolute {position: absolute;top:0;}
 
 .tooltip {
   position: relative;
@@ -31,23 +66,22 @@
 }
 
 .skillsHeadline {
-width:6%;
-position: absolute;
-top: 200px;
-right: 0;
+  width: 6%;
+  position: absolute;
+  top: 200px;
+  right: 0;
 }
-
 
 .tooltip .tooltiptext {
   white-space: wrap;
   display: flex;
   flex-direction: column;
-  gap:24px;
+  gap: 24px;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
   visibility: hidden;
   width: 220px;
-  background-color:white;
+  background-color: white;
   color: #000;
   text-align: center;
   border-radius: 16px;
@@ -60,8 +94,10 @@ right: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-.tooltip .tooltiptext img {width:40px;height:40px;
-margin:8px;
+.tooltip .tooltiptext img {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
 }
 
 .tooltip:hover .tooltiptext {
@@ -73,7 +109,6 @@ margin:8px;
   bottom: 100%;
   top: auto;
 }
-
 
 .skillbox {
   display: flex;
@@ -91,8 +126,7 @@ margin:8px;
   display: flex;
   gap: 5vw;
   flex-wrap: wrap;
-  padding-top: 48px;
-  
+  padding-top: 30px;
 }
 
 .skillsRight {
@@ -101,11 +135,40 @@ margin:8px;
   flex-direction: column;
   align-items: flex-end;
   gap: 24px;
-  
+  position: relative;
 }
+
+// .h2div {
+//   width: 100%;
+//   display: flex;
+//   justify-content: end;
+//   background-color: blue;
+//   position: relative;
+//   margin-top: 48px;
+//   // max-width: 1440px;
+//   h2 {
+//     text-align: right;
+//     // background-color: #141d2f;
+//     background-color: red;
+//     width: fit-content;
+//     // margin: 0 100px;
+//     // padding: 0 100px;
+
+//   }
+//   svg {
+//     position: absolute;
+//     width: 78%;
+//     top: 50%;
+//     right: 0;
+//     bottom: 0;
+//     height: 100%;
+//     z-index: -1;
+//   }
+// }
 
 .skills {
   // scroll-margin-top: 120px;
+  // background-color: pink;
   background-image: url("./../../../assets/img/Green shadow 2.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -113,9 +176,9 @@ margin:8px;
   padding-top: 70px;
   padding-bottom: 70px;
   overflow: hidden;
-  position: relative;
-
-  
+  // position: relative;
+  // display: flex;
+  // align-items: center;
 }
 h3 {
   font-size: 32px;
@@ -130,6 +193,13 @@ h3 {
     text-align: right;
     color: #9747ff;
   }
+}
+
+.skillsLine {
+  position: absolute;
+    top: 50px;
+    margin-right: -100%;
+    padding-left: 24px;
 }
 
 p {
@@ -148,10 +218,13 @@ p {
 
 h2 {
   text-align: right;
+  background-color: #141D2F;
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 24px;
+  // margin-right: -72px;
+  //   padding-right: 72px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -170,4 +243,11 @@ h2 {
     align-items: start;
     padding: 48px 25px;
   }
+
+  .skillsLine[_ngcontent-ng-c1985925266] {
+    position: absolute;
+    top: 55px;
+    margin-right: -100%;
+    padding-left: 8px;
+}
 }

@@ -42,7 +42,7 @@ export class PortfolioComponent {
       deutsch:'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.',
       image:'./../../../assets/img/projectimages/pokedex.png',
       githubUrl:'https://github.com/OezkanSarikaya/pokedex',
-      demoUrl:'https://oezkan-sarikaya.developerakademie.net/pokedex/',
+      demoUrl:'https://pokedex.oezkan-sarikaya.de/',
       index: 3
     }, 
     {

@@ -17,16 +17,12 @@ export class HeaderComponent  {
 
   mobileNavContainer = document.getElementById('mobileMenu');
 
-
   closeMenu() {
     this.mobileNavOpen = false;
   }
 
   public activeSection: string | null = '';
 
-  // ngAfterViewInit(): void {
-  //   this.onScroll();
-  // }
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event?: Event) {

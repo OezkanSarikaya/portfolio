@@ -39,42 +39,33 @@ export class ReferencesComponent {
 
   animate = false;
 
-  testimonialText = document.getElementById('testimonialText');
+  // testimonialText = document.getElementById('testimonialText');
   currentText = this.testimonials[0].text;
   currentPerson = this.testimonials[0].person;
   currentImage= this.testimonials[0].image;
   currentPostId = 0;
 
 
+  /* navigate with the dots */
   navigate(postId: number) {
     this.currentText = this.testimonials[postId].text;
     this.currentPerson = this.testimonials[postId].person;
     this.currentImage = this.testimonials[postId].image;
     this.currentPostId = postId;
-    this.triggerAnimation();
-    
-  }
-
-  triggerAnimation() {
-    this.animate = false; // Reset animation
-    setTimeout(() => {
-      this.animate = true;
-    }, 0); // Trigger animation
+    this.triggerAnimation();    
   }
 
   next() {
-
     if (this.currentPostId >= this.testimonials.length-1) {this.currentPostId=-1}
     let postId = this.currentPostId+1;
     this.currentText = this.testimonials[postId].text;
     this.currentPerson = this.testimonials[postId].person;
     this.currentImage = this.testimonials[postId].image;
     this.currentPostId = postId;
-    this.triggerAnimation();
+    this.triggerAnimation(); 
   }
 
-  back() {
-  
+  back() {  
     if (this.currentPostId == 0) {
       this.currentPostId = this.testimonials.length;
     }
@@ -84,5 +75,12 @@ export class ReferencesComponent {
     this.currentImage = this.testimonials[postId].image;
     this.currentPostId = postId;
     this.triggerAnimation();
+  }
+
+  triggerAnimation() {
+    this.animate = false; // Reset animation
+    setTimeout(() => {
+      this.animate = true;
+    }, 0); // Trigger animation
   }
 }

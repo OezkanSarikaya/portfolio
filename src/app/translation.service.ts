@@ -4,24 +4,19 @@ import { TranslateService } from '@ngx-translate/core';
 @Injectable({
   providedIn: 'root',
 })
-
 export class TranslationService {
-
   public english = true;
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');    
+    translate.setDefaultLang('en');
   }
 
-  public switchLanguage(language: string): void {
-    // console.log('test');
-    
-    this.translate.use(language);
-    this.english = !this.english;  
-    if (this.english)   {
+  public switchLanguage(): void {
+    // this.translate.use(language);
+    this.english = !this.english;
+    if (this.english) {
       this.translate.use('en');
-    }
-    else {
+    } else {
       this.translate.use('de');
     }
   }

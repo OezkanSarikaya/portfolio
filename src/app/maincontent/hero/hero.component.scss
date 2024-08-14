@@ -19,6 +19,14 @@ a {
   color: white;
 }
 
+h4.font-size-i-am {
+  font-size: 45px !important;
+}
+
+h3.font-size-i-am {
+  font-size: 55px !important;
+}
+
 .scrolldown {
   // background-color: red;
   // height:100%;
@@ -291,7 +299,7 @@ a svg {
   }
   .heroRight {
     gap: 26px;
-    margin-top: 45px;
+    // margin-top: 45px;
   }
   .heroText {
     position: absolute;

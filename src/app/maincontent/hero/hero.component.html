@@ -11,10 +11,10 @@
   <div class="heroText" data-aos="fade-left">
     <div class="heroRight">
       <div class="heroHeadlineOuterFrame">
-        <h4>{{ "iam" | translate }}</h4>
+        <h4 [ngClass]="{'font-size-i-am': translate.english == false}">{{ "iam" | translate }}</h4>
         <div class="heroHeadline">
           <h2>Özkan Sarikaya</h2>
-          <h3>FULLSTACK {{ "developer" | translate }}</h3>
+          <h3 [ngClass]="{'font-size-i-am': translate.english == false}">FULLSTACK {{ "developer" | translate }}</h3>
         </div>
       </div>
       <a href="#contact" class="contactButton">{{ "heroBtn" | translate }}</a>

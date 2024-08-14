@@ -2,6 +2,7 @@
   display: flex;
   align-items: start;
   padding: 36px 100px;
+  flex-direction: row-reverse;
   // margin:0 !important;
 }
 .outerBackgroundContainer {
@@ -18,22 +19,32 @@
     // background-color: greenyellow;
     height: 4px;
     position: absolute;
-    top:50%;
-    width:100%;
-    left:0;
+    top: 50%;
+    width: 100%;
+    left: 0;
     z-index: 1;
-    margin-left:80%;
-
+    margin-left: 80%;
   }
   h2 {
     // background-color: blue;
-    background-color: #141D2F;
+    background-color: #141d2f;
     z-index: 2;
     width: fit-content;
     text-align: right;
-   margin-right:-24px;
-     padding: 0 24px;
+    margin-right: -24px;
+    padding: 0 24px;
   }
+}
+
+.skillsMobileBottom {
+  display: none;
+}
+
+.skillsDesktop {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 24px;
 }
 
 .padding {
@@ -118,9 +129,10 @@
   width: 88px;
   font-weight: 700;
   text-align: center;
-  flex: 1;
+  // flex: 1;
 }
 .skillsLeft {
+  position: relative;
   width: 50%;
   display: flex;
   gap: 5vw;
@@ -136,34 +148,6 @@
   gap: 24px;
   position: relative;
 }
-
-// .h2div {
-//   width: 100%;
-//   display: flex;
-//   justify-content: end;
-//   background-color: blue;
-//   position: relative;
-//   margin-top: 48px;
-//   // max-width: 1440px;
-//   h2 {
-//     text-align: right;
-//     // background-color: #141d2f;
-//     background-color: red;
-//     width: fit-content;
-//     // margin: 0 100px;
-//     // padding: 0 100px;
-
-//   }
-//   svg {
-//     position: absolute;
-//     width: 78%;
-//     top: 50%;
-//     right: 0;
-//     bottom: 0;
-//     height: 100%;
-//     z-index: -1;
-//   }
-// }
 
 .skills {
   // scroll-margin-top: 120px;
@@ -196,9 +180,9 @@ h3 {
 
 .skillsLine {
   position: absolute;
-    top: 50px;
-    margin-right: -100%;
-    padding-left: 24px;
+  top: 50px;
+  margin-right: -100%;
+  padding-left: 24px;
 }
 
 p {
@@ -217,7 +201,7 @@ p {
 
 h2 {
   text-align: right;
-  background-color: #141D2F;
+  background-color: #141d2f;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -227,8 +211,23 @@ h2 {
 }
 
 @media screen and (max-width: 1280px) {
+  .skillsMobileBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    margin-top:48px;
+  }
+
+  .skillsMobileBottom p {
+    text-align: center;
+  }
+  .skillsDesktop {
+    display: none;
+  }
   .innerskills {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .skillsLeft,
   .skillsRight {
@@ -248,5 +247,14 @@ h2 {
     top: 55px;
     margin-right: -100%;
     padding-left: 8px;
-}
+  }
+
+  .skillsMobileBottom {
+   h3 {
+    font-size:26px;
+    b {
+      font-size:26px;
+    }
+   }
+  }
 }

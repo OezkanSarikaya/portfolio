@@ -1,8 +1,8 @@
 #main {
   background-image: url("./../../assets/img/Green shadow 3.png");
   background-repeat: no-repeat;
-  background-position: right 80%;
-  background-size: 25%;
+  background-position: right bottom 20%;
+  // background-size: 25%;
   overflow: hidden;
 }
 
@@ -11,9 +11,16 @@
 }
 
 #portfolio {
-    scroll-margin-top: 109px;
+    scroll-margin-top: 89px;
     padding-top: 24px ;
+    // background-image: url("./../../assets/img/Purple shadow 3.png");
+    // background-repeat: no-repeat;
+    // background-position: center left;
+    // background-color:red;
+    // background-size: 35%;
 }
+
+
 
 #contact {
   scroll-margin-top: 89px;

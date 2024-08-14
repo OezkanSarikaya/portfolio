@@ -1,22 +1,35 @@
 <div class="skills">
-  <!-- <div class="outerBackgroundContainer">
-    <svg width="100%" height="50%">
-      <line
-        x1="0%"
-        y1="0%"
-        x2="100%"
-        y2="0%"
-        stroke="#9747FF"
-        stroke-width="8"
-        stroke-linecap="round"
-      ></line>
-    </svg>
-    <div class="maxContentWith padding absolute">
-      <h2>My skills</h2>
-    </div>
-  </div> -->
-
   <div class="maxContentWith innerskills">
+    <div data-aos="fade-left" class="skillsRight">
+      <!-- <div class="skillsRight"> -->
+
+      <h2>My skills</h2>
+      <svg class="skillsLine" width="100%" height="50%">
+        <line
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="0%"
+          stroke="#9747FF"
+          stroke-width="8"
+          stroke-linecap="round"
+        ></line>
+      </svg>
+
+      <p>{{ "skills1" | translate }}</p>
+      <div class="skillsDesktop">
+        <h3>
+          {{ "skills2a" | translate }} <b>{{ "skills2b" | translate }}</b
+          >?
+        </h3>
+        <p>{{ "skills3" | translate }}</p>
+        <a href="#contact" class="contactButton">{{
+          "skillsBtn" | translate
+        }}</a>
+      </div>
+    </div>
+
+
     <div class="skillsLeft">
       <div class="skillbox">
         <svg
@@ -408,30 +421,28 @@
           </div>
         </span>
       </div>
+
+
     </div>
 
-    <div data-aos="fade-left" class="skillsRight">
-      <!-- <div class="skillsRight"> -->
+ 
 
-      <h2>My skills</h2>    <svg class="skillsLine" width="100%" height="50%">
-        <line
-          x1="0%"
-          y1="0%"
-          x2="100%"
-          y2="0%"
-          stroke="#9747FF"
-          stroke-width="8"
-          stroke-linecap="round"
-        ></line>
-      </svg>
 
-      <p>{{ "skills1" | translate }}</p>
+
+    <div class="skillsMobileBottom">
       <h3>
         {{ "skills2a" | translate }} <b>{{ "skills2b" | translate }}</b
         >?
       </h3>
       <p>{{ "skills3" | translate }}</p>
       <a href="#contact" class="contactButton">{{ "skillsBtn" | translate }}</a>
+    
     </div>
+
+
   </div>
+
+
+
+  
 </div>

@@ -2,10 +2,6 @@
   height: 100vh;
   background-image: url("./../../../assets/img/29. photo shadows.png");
   background-repeat: no-repeat;
-  // background-position-y: center;
-  // background-position-y: -50px;
-  // background-position: 60px 40px;
-  // background-size: 707px 671px;
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
@@ -28,11 +24,7 @@ h3.font-size-i-am {
 }
 
 .scrolldown {
-  // background-color: red;
-  // height:100%;
-  // width: 100%;
   display: flex;
-  // gap: 24px;
   align-items: end;
   justify-content: end;
   position: absolute;
@@ -41,7 +33,6 @@ h3.font-size-i-am {
   z-index: 10;
   font-size: 23px;
   a {
-    // background-color: blue;
     transform: rotate(90deg);
     display: flex;
     justify-content: center;
@@ -87,7 +78,6 @@ a svg {
 
 .heroIconBox {
   position: absolute;
-  // background-color:red;
   top: 92%;
   left: 0;
   right: 0;
@@ -111,17 +101,11 @@ a svg {
   max-width: 1440px;
   padding: 0 100px;
   margin: 0 auto;
-  // background-color: #141D2F;
   display: flex;
   gap: 32px;
   align-items: center;
-  // position: absolute;
-  // bottom: 36px;
-  // left: 0;
   position: relative;
   z-index: 5;
-  // padding-left:-100px;
-  // margin-left:100px;
 }
 
 .heroRight {
@@ -180,12 +164,6 @@ a svg {
   }
 }
 
-// @media (orientation: landscape) {
-//   .innerBackground {
-
-//   }
-// }
-
 
 @media screen and (max-width: 1400px) {
   .hero {
@@ -224,6 +202,18 @@ a svg {
 }
 
 @media screen and (max-width: 900px) {
+
+
+
+  h4.font-size-i-am {
+    font-size: 30px !important;
+  }
+  
+  h3.font-size-i-am {
+    font-size: 40px !important;
+  }
+
+
   .heroContactIcons {
     gap: 18px;
   }
@@ -293,6 +283,14 @@ a svg {
 }
 
 @media screen and (max-width: 680px) {
+
+  h4.font-size-i-am {
+    font-size: 4.6vw !important;
+  }
+  
+  h3.font-size-i-am {
+    font-size: 6.1vw !important;
+  }
 
   .heroContactIcons {
     justify-content: center;

@@ -26,25 +26,26 @@ export class PortfolioComponent {
       index: 1
     },
     {
-      headline: 'El Pollo Loco',
-      subheadline: 'JavaScript | HTML | CSS',
-      text: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.',
-      deutsch:'Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen das Killerhuhn zu kämpfen.',
-      image:'./../../../assets/img/projectimages/el-pollo-loco.png',
-      githubUrl:'https://github.com/OezkanSarikaya/canvasGame',
-      demoUrl:'https://el-pollo-loco.oezkan-sarikaya.de/',
+      headline: 'Coderr',
+      subheadline: 'JavaScript | Python | Django REST Framework',
+      text: 'Coderr is a platform for freelancers in web development like Fiverr.',
+      deutsch:'Coderr ist eine Plattform für Freiberufler in der Webentwicklung wie Fiverr.',
+      image:'./../../../assets/img/projectimages/coderr.png',
+      githubUrl:'https://github.com/OezkanSarikaya/coderr-backend',
+      demoUrl:'https://coderr.oezkan-sarikaya.de/',
       index: 2
-    },
-    {
-      headline: 'Pokedex',
-      subheadline: 'JavaScript | HTML | CSS | Api',
-      text: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      deutsch:'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.',
-      image:'./../../../assets/img/projectimages/pokedex.png',
-      githubUrl:'https://github.com/OezkanSarikaya/pokedex',
-      demoUrl:'https://pokedex.oezkan-sarikaya.de/',
-      index: 3
     }, 
+
+    // {
+    //   headline: 'Pokedex',
+    //   subheadline: 'JavaScript | HTML | CSS | Api',
+    //   text: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+    //   deutsch:'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.',
+    //   image:'./../../../assets/img/projectimages/pokedex.png',
+    //   githubUrl:'https://github.com/OezkanSarikaya/pokedex',
+    //   demoUrl:'https://pokedex.oezkan-sarikaya.de/',
+    //   index: 3
+    // }, 
     {
       headline: 'Visualdenker',
       subheadline: 'WordPress | HTML | CSS | Responsive',
@@ -53,8 +54,19 @@ export class PortfolioComponent {
       image:'./../../../assets/img/projectimages/visualdenker.png',
       githubUrl:'',
       demoUrl:'https://www.visualdenker.com/',
-      index: 4
+      index: 3
     }, 
+    {
+      headline: 'El Pollo Loco',
+      subheadline: 'JavaScript | HTML | CSS',
+      text: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the killer chicken.',
+      deutsch:'Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen das Killerhuhn zu kämpfen.',
+      image:'./../../../assets/img/projectimages/el-pollo-loco.png',
+      githubUrl:'https://github.com/OezkanSarikaya/canvasGame',
+      demoUrl:'https://el-pollo-loco.oezkan-sarikaya.de/',
+      index: 4
+    },
+
   ];
 
 

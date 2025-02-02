@@ -4,9 +4,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #141d2f;
+  background-color: #141d2f8f;
   height: 109px;
   z-index: 10000;
+  a {
+    height:35px;
+  }
 }
 
 .logo {
@@ -17,19 +20,22 @@
 
 .desktopNav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 29px;
   span {
     cursor: pointer;
   }
   a {
+    height: 35px;
+    align-items: center;
+    display: flex;
     font-size: 23px;
     font-weight: 400;
     line-height: 27.6px;
     text-align: left;
     transition: color 125ms ease-in-out;
     color:white;
-    padding-bottom:4px;
+    // padding-bottom:4px;
     &.active {
       color: #70e61c;    
       border-bottom:4px solid #9747FF;
@@ -166,7 +172,8 @@ display:flex;
 
   .mobileNavContainer {
     // transform:translateX(-500px);
-    background-color: #141d2fcc;
+    // background-color: #141d2fcc;
+    background-color: #141d2f8f;
     height: 100vh;
     width:100vw;
     z-index: 5;

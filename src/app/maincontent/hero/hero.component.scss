@@ -5,6 +5,7 @@
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
+  background-size: 90vh;
 }
 .scrolldownBox {
   padding: 0 100px;
@@ -57,10 +58,19 @@ a svg {
   transition: transform 125ms ease-in-out;
 }
 
+.herophoto {
+ position: relative; 
+}
+
+.heroarm {
+  position: absolute; 
+  z-index: 2;
+ }
+
 .innerBackground {
   background-image: url("./../../../assets/img/28. Hero Background.png");
   background-repeat: no-repeat;
-  background-position: left 35vh;
+  background-position: left 38vh;
   background-size: 100% 100%;
   height: 100vh;
   position: absolute;
@@ -151,16 +161,16 @@ a svg {
 .heroImage {
   width: 40%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding-left: 100px;
   margin-bottom: 180px;
   img {
     max-width: 586px;
-    min-width: 586px;
+    // min-width: 586px;
     object-fit: contain;
     margin-top: -50px;
-    width: 100%;
+    width: 55vh;
   }
 }
 
@@ -180,25 +190,47 @@ a svg {
     bottom:10px;
   }
 
+  // .innerBackground {
+  //   bottom: 195px;
+  //   top:unset;
+  // }
+
   .heroImage {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    
+    // height:100%;
+    align-items: center;
     // align-items: center;
+    // margin-bottom:200px;
     padding-left: 0px;
+    // margin-top: 195px;
+    // margin-top: 3vh;
+    margin-bottom: 25vh;
+    height: 100%;
 
 
 
     img {
-      max-width: 546px;
-      min-width: 546px;
+      // max-width: 546px;
+      max-width:460px;
+      // min-width: 546px;
       object-fit: contain;
       // margin-top: -50px;
       // margin-top: 140px;
       width: 100%;
     }
   }
+}
+
+
+@media screen and (max-width: 1024px) {
+.heroImage img {
+  max-width: 45vh;
+  margin-top:unset;
+}
+
 }
 
 @media screen and (max-width: 900px) {
@@ -219,7 +251,7 @@ a svg {
   }
 
   .innerBackground {
-    background-position: left 27vh;
+    background-position: left 25vh;
     background-size: 1442px 1079px;
     height: 100vh;
     position: absolute;
@@ -271,11 +303,13 @@ a svg {
   .heroImage,
   .heroText {
     width: 100%;
+    margin-top: 0px;
   }
 
   .heroImage {
     justify-content: center;
     padding-left: 25px;
+    height: unset;
     img {
       width: 100%;
     }
@@ -326,7 +360,7 @@ a svg {
   }
 
   .innerBackground {
-    background-position: left 35vw;
+    background-position: left 38vw;
     background-size: 1442px 1079px;
     height: 100vh;
     position: absolute;
@@ -356,7 +390,7 @@ a svg {
 
 @media screen and (max-width: 430px) {
   .innerBackground {
-    background-position: left 0vw;
+    background-position: left 10vw;
     background-size: 1442px 1079px;
     height: 100vh;
     position: absolute;
@@ -374,6 +408,24 @@ a svg {
   }
 
 }
+
+// @media all and (orientation: landscape) {
+// .heroImage img {
+
+//   min-width: unset;
+//   height:90vh !important;
+//   margin-top:-20px;
+// }
+
+// .header {
+//   height: 80px !important;
+// }
+
+// .innerHeader {
+//   padding: 20px 25px;
+// }
+
+// }
 
 
 
